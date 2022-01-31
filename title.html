@@ -31,7 +31,7 @@
                     <li>Время работы c 11:00 до 23:00</li>
                     <li>
                         <img id="accountsvg" src="/img/Account.svg" alt="">
-                        Войти в аккаунт
+                        <span>Войти в аккаунт</span>
                     </li>
                 </ul>
             </div>
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="header-cart__cart">
-                <button>
+                <button class="button button-cart">
                     <img src="/img/Shoppingbag.svg" alt="">
                     <span>0 ₽</span>
                 </button>
@@ -53,9 +53,29 @@
     <main>
         <div class="container">
             <div class="check-address">
-                    <label class="input__check-address-label" for="address">Проверить адрес доставки</label>
-                    <input class="input__check-address-input" placeholder= "Адрес" type="search" name="address">
-                    <input class="input__check-address-button" type="button" value="Проверить">
+                <label class="check-address__input-label" for="address">Проверить адрес доставки</label>
+                <input class="check-address__input-input" placeholder="Адрес" type="search" id="address">
+                <input class="button check-address__input-button" type="button" value="Проверить">
+            </div>
+            <div class="heading-and-filter">
+                <h2>Пицца</h2>
+                <button class="button button-filter">
+                    <img src="/img/Filter.svg" alt="">
+                    <span>Фильтры</span>
+                </button>
+            </div>
+            <div class="content">
+                <div class="content-card">
+                    <img src="/img/pizza-src/pizza1.png" alt="">
+                    <div class="content-card_description">
+                        <h3>Чикен сладкий чили</h3>
+                        <p>Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соус, Ещё что-то Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatibus saepe similique? Similique modi iure fugit deserunt quae. Delectus ad sint ut inventore accusantium enim quod a corrupti debitis tempora?</p>
+                    </div>
+                    <div class="content-card_select">
+                        <button class="button button-select">Выбрать</button>
+                        <span>от 399 ₽</span>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
