@@ -22,15 +22,31 @@
 
 html {
     background: #F9F9F9;
+    scroll-behavior: smooth;
 }
 
 h1 h2 h3 h4 h5 h6 {
     font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 32px;
 }
 
 h4 {
-    font-style: normal;
-    font-weight: 600;
     font-size: 20px;
     line-height: 28px;
 }
@@ -38,8 +54,7 @@ h4 {
 .container {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding: 0 195px;
+    margin: 0 195px;
 }
 
 
@@ -61,6 +76,7 @@ h4 {
     border: none;
     border-radius: 6px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 /* Header start */
@@ -80,6 +96,11 @@ h4 {
 .header-info ul li {
     display: inline-block;
     padding-right: 40px;
+}
+
+.header-info ul li a {
+    text-decoration: none;
+    color: black;
 }
 
 .header-info ul li:last-child {
@@ -213,6 +234,7 @@ h4 {
     border: 1px solid #F0F0F0;
     border-radius: 12px;
     padding: 20px;
+    cursor: pointer;
 }
 
 .nav-bar__list li img {
@@ -298,17 +320,33 @@ h4 {
 .content {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
-    justify-content: space-between;
     grid-gap: 30px;
 }
 
 .content-card {
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 300px;
     min-height: 480px;
     border: 1px solid #F0F0F0;
     border-radius: 12px;
+}
+
+.content-card__label {
+    font-family: 'Inter';
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    height: 32px;
+    width: 65px;
+    background: #E23535;
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    font-size: 14px;
 }
 
 .content-card_description {
@@ -358,7 +396,7 @@ h4 {
     padding: 13px 32px;
 }
 
-/* About where-pizza block start */
+/* "About where-pizza" block start */
 
 .content-about {
     display: flex;
@@ -366,16 +404,50 @@ h4 {
     align-self: center;
     width: 850px;
     gap: 20px;
+    line-height: 22px;
 }
 /* Пока не разобрался с затуханием текста с помощью градиента */
 .content-about > div {
     line-height: 22px;
     overflow: hidden;
-    max-height: 308px;
     background: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #ffffff 100%),
     linear-gradient(0deg, #191919, #191919);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
 
-/* About where-pizza block ends */
+/* "About where-pizza" block ends */
+
+/* Advertising card starts */
+
+.advertising {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.advertising__card {
+    display: grid;
+    grid-template-rows: 75% 25%;
+    background: #FF7010;
+    border-radius: 12px;
+    min-width: 300px;
+    width: 300px;
+    height: 343px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.advertising__card h4 {
+    padding: 20px;
+    padding-right: 40px;
+    color: #fff;
+    align-self: end;
+}
+
+.advertising__card__red {
+    background: #E23535;
+    align-items: center;
+}
+
+/* Advertising card ends */
