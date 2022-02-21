@@ -118,7 +118,8 @@ h4 {
     width: 12px;
     height: 12px;
     position: relative;
-    top: 3px;
+    top: 2px;
+    color: black;
 }
 
 #accountsvg {
@@ -152,6 +153,43 @@ h4 {
     margin-left: 10px;
 }
 
+.header-sticky {
+    display: none;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    padding: 11px 195px;
+}
+
+.header-sticky__nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-sticky__nav-bar > div {
+    margin-right: 64px;
+}
+
+.header-sticky__nav-bar a {
+    position: relative;
+    text-decoration: none;
+}
+.header-sticky__nav-bar a:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.header-sticky__nav-bar a span {
+    padding: 0 16px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+.header-sticky__nav-bar a:last-child span {
+    padding-right: 6px;
+    color:#191919;
+}
 /* Header end */
 
 /* Footer start */
@@ -192,6 +230,7 @@ h4 {
 .footer__refs a {
     text-decoration: none;
     margin: 10px 0;
+    color:#191919;
 }
 
 .footer__refs ul li {
@@ -227,7 +266,7 @@ h4 {
     justify-content: space-between;
 }
 
-.nav-bar__list li {
+.nav-bar__list a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,19 +274,24 @@ h4 {
     border-radius: 12px;
     padding: 20px;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
-.nav-bar__list li img {
+.nav-bar__list a:hover {
+    background: #eeeeee;
+}
+
+/* .nav-bar__list a img {
     width: 32px;
     height: 32px;
-}
+} */
 
-.nav-bar__list li span {
+.nav-bar__list a span {
     font-size: 18px;
     line-height: 24px;
     padding: 8px;
 }
-
 
 /* Navigation bar ends */
 
@@ -300,10 +344,13 @@ h4 {
 
 /* Heading and filter start*/
 
-.heading-and-filter {
+.heading {
     display: flex;
-    justify-content: space-between;
     margin: 30px 0;
+}
+
+.heading-filter {
+    justify-content: space-between;
 }
 
 .button-filter {
@@ -321,6 +368,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
     grid-gap: 30px;
+    justify-content: space-between;
 }
 
 .content-card {
@@ -422,7 +470,7 @@ h4 {
 
 .advertising {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
 }
 
