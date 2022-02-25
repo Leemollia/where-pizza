@@ -128,16 +128,6 @@ h4 {
     padding-right: 12px;
 }
 
-.header-cart {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #f0f0f0;
-    border-bottom: 1px solid #f0f0f0;
-    padding: 12px 195px;
-    font-size: 18px;
-}
-
 .button-cart {
     display: flex;
     align-items: center;
@@ -154,42 +144,78 @@ h4 {
 }
 
 .header-sticky {
-    display: none;
-    justify-content: space-between;
     position: sticky;
-    top: 0px;
+    top: 0;
+    z-index: 2;
     padding: 11px 195px;
+    background: #ffffff;
 }
 
 .header-sticky__nav-bar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.header-sticky__nav-bar > div {
-    margin-right: 64px;
+.sticky__links {
+    display: none;
 }
 
-.header-sticky__nav-bar a {
-    position: relative;
+.sticky__links a {
     text-decoration: none;
-}
-.header-sticky__nav-bar a:last-child {
-    display: flex;
-    align-items: center;
-}
-
-.header-sticky__nav-bar a span {
     padding: 0 16px;
     text-decoration: none;
     color:rgb(0, 0, 0);
 }
 
-.header-sticky__nav-bar a:last-child span {
-    padding-right: 6px;
-    color:#191919;
+.sticky__cart {
+    margin-left: auto;
 }
+
+.sticky__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 64px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+.sticky__logo span {
+    padding-left: 12px;
+}
+
+
+/*----------------------POPUP-OTHER-------------------*/
+.popup-other {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 1000px;
+    opacity: 0;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 8px rgba(25, 25, 25, 0.1);
+    border-radius: 12px;
+    transition: 0.25s all;
+    pointer-events: all;
+}
+
+.popup-other a {
+    padding: 8px 20px 8px 20px;
+}
+
+.popup-other a:last-child {
+    padding: 8px 20px 20px 20px;
+}
+
+.open {
+    opacity: 1;
+}
+
+/*----------------------POPUP-OTHER-------------------*/
+
+
 /* Header end */
 
 /* Footer start */
