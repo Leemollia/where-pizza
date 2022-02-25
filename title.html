@@ -39,64 +39,45 @@
                 </ul>
             </div>
         </div>
-        <div class="header-cart">
-            <div class="header-cart__name">
-                <div class="logo">
-                    <img src="./img/Pizza.svg" alt="">
-                    <span>Куда пицца</span>
-                </div>
-            </div>
-            <div class="header-cart__cart">
-                <button class="button button-cart">
-                    <img src="/img/Shoppingbag.svg" alt="">
-                    <span>0 ₽</span>
-                </button>
-            </div>
-        </div>
+    </header>
+    <main class="main">
         <div class="header-sticky">
             <ul class="header-sticky__nav-bar">
-                <div class="logo">
+                <a href="#" class="sticky__logo">
                     <img src="./img/Pizza.svg" alt="">
                     <span>Куда пицца</span>
+                </a>
+                <div class="sticky__links">
+                    <a href="#advertisinglink">Акции</a>
+                    <a href="#pizzalink">Пицца</a>
+                    <a href="#sushilink">Суши</a>
+                    <a href="#drinkslink">Напитки</a>
+                    <a href="#snackslink">Закуски</a>
+                    <a href="#combolink">Комбо</a>
+                    <a href="#desertslink">Десерты</a>
+                    <a href="#saucelink">Соусы</a>
+                    <a href="#" class="open-popupother">Другое
+                        <img id="arrowdownsvg" src="/img/Arrowdown.svg" alt="">
+                        <div class="popup-other">
+                            <a href="">Акции</a>
+                            <a href="">О компании</a>
+                            <a href="">Пользовательское соглашение</a>
+                            <a href="">Условия гарантии</a>
+                            <a href="">Ресторан</a>
+                            <a href="">Контакты</a>
+                            <a href="">Поддержка</a>
+                            <a href="">Отследить заказ</a>
+                        </div>
+                    </a>
                 </div>
-                <a href="#advertisinglink">
-                    <span>Акции</span>
-                </a>
-                <a href="#pizzalink">
-                    <span>Пицца</span>
-                </a>
-                <a href="#sushilink">
-                    <span>Суши</span>
-                </a>
-                <a href="#drinkslink">
-                    <span>Напитки</span>
-                </a>
-                <a href="#snackslink">
-                    <span>Закуски</span>
-                </a>
-                <a href="#combolink">
-                    <span>Комбо</span>
-                </a>
-                <a href="#desertslink">
-                    <span>Десерты</span>
-                </a>
-                <a href="#saucelink">
-                    <span>Соусы</span>
-                </a>
-                <a href="#">
-                    <span>Другое</span>
-                    <img id="arrowdownsvg" src="/img/Arrowdown.svg" alt="">
-                </a>
+                <div class="sticky__cart">
+                    <button class="button button-cart">
+                        <img src="/img/Shoppingbag.svg" alt="">
+                        <span>0 ₽</span>
+                    </button>
+                </div>
             </ul>
-            <div class="header-cart__cart">
-                <button class="button button-cart">
-                    <img src="/img/Shoppingbag.svg" alt="">
-                    <span>0 ₽</span>
-                </button>
-            </div>
         </div>
-    </header>
-    <main>
         <div class="container">
             <nav class="nav-bar">
                 <ul class="nav-bar__list">
@@ -134,7 +115,7 @@
                     </a>
                 </ul>
             </nav>
-            <div class="advertising" id="advertisinglink">
+            <section class="advertising" id="advertisinglink">
                 <a href="#" class="advertising__card">
                     <img src="img/pizza-src/tripple-pizza.svg" alt="">
                     <h4>3 средние пиццы от 999 рублей</h4>
@@ -151,531 +132,543 @@
                     <img src="img/pizza-src/pizza-box.svg" alt="">
                     <h4>Кэшбек 10% на самовывоз (доставка)</h4>
                 </a>
-            </div>
-            <div class="check-address" id="check-address">
+            </section>
+            <section class="check-address" id="check-address">
                 <label class="check-address__input-label" for="address">Проверить адрес доставки</label>
                 <input class="check-address__input-input" placeholder="Адрес" type="search" id="address">
                 <input class="button check-address__input-button" type="button" value="Проверить">
-            </div>
-            <div class="heading heading-filter">
-                <h2 id="pizzalink">Пицца</h2>
-                <button class="button button-filter">
-                    <img src="/img/Filter.svg" alt="">
-                    <span>Фильтры</span>
-                </button>
-            </div>
-            <div class="content">
-                <div class="content-card">
-                    <div class="content-card__label">New</div>
-                    <img src="/img/pizza-src/pizza2.png" alt="">
-                    <div class="content-card_description">
-                        <h3>EASY PEASY огуречный расколбас</h3>
-                        <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                            praesentium? Non dolorem nostrum temporibus commodi quo iste corrupti, at saepe odit nam, ad
-                            veniam sit voluptas consequatur pariatur debitis exercitationem.</p>
+            </section>
+            <section class="main-content">
+                <div class="heading heading-filter">
+                    <h2 id="pizzalink">Пицца</h2>
+                    <button class="button button-filter">
+                        <img src="/img/Filter.svg" alt="">
+                        <span>Фильтры</span>
+                    </button>
+                </div>
+                <div class="content">
+                    <div class="content-card">
+                        <div class="content-card__label">New</div>
+                        <img src="/img/pizza-src/pizza2.png" alt="">
+                        <div class="content-card_description">
+                            <h3>EASY PEASY огуречный расколбас</h3>
+                            <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Cum,
+                                praesentium? Non dolorem nostrum temporibus commodi quo iste corrupti, at saepe odit
+                                nam, ad
+                                veniam sit voluptas consequatur pariatur debitis exercitationem.</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>от 549 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="content-card__label">Хит</div>
+                        <img src="/img/pizza-src/pizza2.png" alt="">
+                        <div class="content-card_description">
+                            <h3>EASY PEASY огуречный расколбас</h3>
+                            <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Cum,
+                                praesentium? Non dolorem nostrum temporibus commodi quo iste corrupti, at saepe odit
+                                nam, ad
+                                veniam sit voluptas consequatur pariatur debitis exercitationem.</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>от 549 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/pizza-src/pizza2.png" alt="">
+                        <div class="content-card_description">
+                            <h3>EASY PEASY огуречный расколбас</h3>
+                            <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Cum,
+                                praesentium? Non dolorem nostrum temporibus commodi quo iste corrupti, at saepe odit
+                                nam, ad
+                                veniam sit voluptas consequatur pariatur debitis exercitationem.</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>от 549 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/pizza-src/pizza2.png" alt="">
+                        <div class="content-card_description">
+                            <h3>EASY PEASY огуречный расколбас</h3>
+                            <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Cum,
+                                praesentium? Non dolorem nostrum temporibus commodi quo iste corrupti, at saepe odit
+                                nam, ad
+                                veniam sit voluptas consequatur pariatur debitis exercitationem.</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>от 549 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/pizza-src/pizza1.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Чикен сладкий чили</h3>
+                            <p>Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соус, Ещё что-то</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>от 399 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/pizza-src/pizza2.png" alt="">
+                        <div class="content-card_description">
+                            <h3>EASY PEASY огуречный расколбас</h3>
+                            <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Cum,
+                                praesentium? Non dolorem nostrum temporibus commodi quo iste corrupti, at saepe odit
+                                nam, ad
+                                veniam sit voluptas consequatur pariatur debitis exercitationem.</p>
+                        </div>
                         <div class="content-card_select">
                             <button class="button button-select">Выбрать</button>
                             <span>от 549 ₽</span>
                         </div>
                     </div>
                 </div>
-                <div class="content-card">
-                    <div class="content-card__label">Хит</div>
-                    <img src="/img/pizza-src/pizza2.png" alt="">
-                    <div class="content-card_description">
-                        <h3>EASY PEASY огуречный расколбас</h3>
-                        <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                            praesentium? Non dolorem nostrum temporibus commodi quo iste corrupti, at saepe odit nam, ad
-                            veniam sit voluptas consequatur pariatur debitis exercitationem.</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>от 549 ₽</span>
+                <div class="heading heading-filter">
+                    <h2 id="sushilink">Суши</h2>
+                    <button class="button button-filter">
+                        <img src="/img/Filter.svg" alt="">
+                        <span>Фильтры</span>
+                    </button>
+                </div>
+                <div class="content">
+                    <div class="content-card">
+                        <div class="content-card__label">New</div>
+                        <img src="/img/sushu-src/fhiladelphia-crunch.jpg" alt="">
+                        <div class="content-card_description">
+                            <h3>Филадельфия кранч</h3>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>475 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="content-card__label">Хит</div>
+                        <img src="/img/sushu-src/pfiladilphia-crembrule.jpg" alt="">
+                        <div class="content-card_description">
+                            <h3>Филадельфия крем-брюле</h3>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>395 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/sushu-src/super-philadilphia.jpg" alt="">
+                        <div class="content-card_description">
+                            <h3>Супер Филадельфия</h3>
+                            <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>425 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/sushu-src/tigr-mama.jpg" alt="">
+                        <div class="content-card_description">
+                            <h3>Тигр мама</h3>
+                            <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>525 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/sushu-src/fhiladelphia-crunch.jpg" alt="">
+                        <div class="content-card_description">
+                            <h3>Филадельфия кранч</h3>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>475 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/sushu-src/pfiladilphia-crembrule.jpg" alt="">
+                        <div class="content-card_description">
+                            <h3>Филадельфия крем-брюле</h3>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>395 ₽</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="content-card">
-                    <img src="/img/pizza-src/pizza2.png" alt="">
-                    <div class="content-card_description">
-                        <h3>EASY PEASY огуречный расколбас</h3>
-                        <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                            praesentium? Non dolorem nostrum temporibus commodi quo iste corrupti, at saepe odit nam, ad
-                            veniam sit voluptas consequatur pariatur debitis exercitationem.</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>от 549 ₽</span>
+                <div class="heading">
+                    <h2 id="snackslink">Закуски</h2>
+                </div>
+                <div class="content">
+                    <div class="content-card">
+                        <img src="/img/snacks-src/kartofel-fri.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Картофель фри</h3>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>120 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/snacks-src/krilya.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Крылья-гриль</h3>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>270 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/snacks-src/naggets.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Наггетсы</h3>
+                            <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>170 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/snacks-src/roll.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Ролл</h3>
+                            <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>200 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/snacks-src/kartofel-fri.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Картофель фри</h3>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>120 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/snacks-src/krilya.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Крылья-гриль</h3>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>270 ₽</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="content-card">
-                    <img src="/img/pizza-src/pizza2.png" alt="">
-                    <div class="content-card_description">
-                        <h3>EASY PEASY огуречный расколбас</h3>
-                        <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                            praesentium? Non dolorem nostrum temporibus commodi quo iste corrupti, at saepe odit nam, ad
-                            veniam sit voluptas consequatur pariatur debitis exercitationem.</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>от 549 ₽</span>
+                <div class="heading">
+                    <h2 id="desertslink">Десерты</h2>
+                </div>
+                <div class="content">
+                    <div class="content-card">
+                        <img src="/img/deserts-src/keks.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Картофель фри</h3>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>120 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/deserts-src/blini.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Крылья-гриль</h3>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>270 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/deserts-src/oladya.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Наггетсы</h3>
+                            <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>170 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/deserts-src/morojenoe.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Ролл</h3>
+                            <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>200 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/deserts-src/keks.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Картофель фри</h3>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>120 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/deserts-src/blini.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Крылья-гриль</h3>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>270 ₽</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="content-card">
-                    <img src="/img/pizza-src/pizza1.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Чикен сладкий чили</h3>
-                        <p>Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соус, Ещё что-то</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>от 399 ₽</span>
+                <div class="heading">
+                    <h2 id="drinkslink">Напитки</h2>
+                </div>
+                <div class="content">
+                    <div class="content-card">
+                        <img src="/img/drinks-src/adrenalin.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Adrenalin Rush</h3>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>120 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/drinks-src/pepsi-max.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Pepsi Max</h3>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>270 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/drinks-src/pepsi.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Pepsi</h3>
+                            <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>170 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/drinks-src/pepsi-cherry.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Pepsi Cherry</h3>
+                            <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>200 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/drinks-src/adrenalin.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Adrenalim RUSH</h3>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>120 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/drinks-src/pepsi-max.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Крылья-гриль</h3>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>270 ₽</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="content-card">
-                    <img src="/img/pizza-src/pizza2.png" alt="">
-                    <div class="content-card_description">
-                        <h3>EASY PEASY огуречный расколбас</h3>
-                        <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                            praesentium? Non dolorem nostrum temporibus commodi quo iste corrupti, at saepe odit nam, ad
-                            veniam sit voluptas consequatur pariatur debitis exercitationem.</p>
-                    </div>
-                    <div class="content-card_select">
-                        <button class="button button-select">Выбрать</button>
-                        <span>от 549 ₽</span>
-                    </div>
+                <div class="heading">
+                    <h2 id="saucelink">Соусы</h2>
                 </div>
-            </div>
-            <div class="heading heading-filter">
-                <h2 id="sushilink">Суши</h2>
-                <button class="button button-filter">
-                    <img src="/img/Filter.svg" alt="">
-                    <span>Фильтры</span>
-                </button>
-            </div>
-            <div class="content">
-                <div class="content-card">
-                    <div class="content-card__label">New</div>
-                    <img src="/img/sushu-src/fhiladelphia-crunch.jpg" alt="">
-                    <div class="content-card_description">
-                        <h3>Филадельфия кранч</h3>
-                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>475 ₽</span>
+                <div class="content">
+                    <div class="content-card">
+                        <img src="/img/sauce-src/sirniy.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Картофель фри</h3>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>120 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/sauce-src/kislo-sladkiy.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Крылья-гриль</h3>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>270 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/sauce-src/mayonez.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Наггетсы</h3>
+                            <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>170 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/sauce-src/varenie.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Ролл</h3>
+                            <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>200 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/sauce-src/sirniy.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Картофель фри</h3>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>120 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/sauce-src/kislo-sladkiy.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Крылья-гриль</h3>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>270 ₽</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="content-card">
-                    <div class="content-card__label">Хит</div>
-                    <img src="/img/sushu-src/pfiladilphia-crembrule.jpg" alt="">
-                    <div class="content-card_description">
-                        <h3>Филадельфия крем-брюле</h3>
-                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>395 ₽</span>
+                <div class="heading">
+                    <h2 id="combolink">Комбо</h2>
+                </div>
+                <div class="content">
+                    <div class="content-card">
+                        <img src="/img/combo-src/combo1.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Картофель фри</h3>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>120 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/combo-src/combo2.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Крылья-гриль</h3>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>270 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/combo-src/combo3.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Наггетсы</h3>
+                            <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>170 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/combo-src/combo4.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Ролл</h3>
+                            <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>200 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/combo-src/combo1.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Картофель фри</h3>
+                            <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>120 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <img src="/img/combo-src/combo2.png" alt="">
+                        <div class="content-card_description">
+                            <h3>Крылья-гриль</h3>
+                            <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
+                            <div class="content-card_select">
+                                <button class="button button-select">Выбрать</button>
+                                <span>270 ₽</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="content-card">
-                    <img src="/img/sushu-src/super-philadilphia.jpg" alt="">
-                    <div class="content-card_description">
-                        <h3>Супер Филадельфия</h3>
-                        <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>425 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/sushu-src/tigr-mama.jpg" alt="">
-                    <div class="content-card_description">
-                        <h3>Тигр мама</h3>
-                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>525 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/sushu-src/fhiladelphia-crunch.jpg" alt="">
-                    <div class="content-card_description">
-                        <h3>Филадельфия кранч</h3>
-                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>475 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/sushu-src/pfiladilphia-crembrule.jpg" alt="">
-                    <div class="content-card_description">
-                        <h3>Филадельфия крем-брюле</h3>
-                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>395 ₽</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="heading">
-                <h2 id="snackslink">Закуски</h2>
-            </div>
-            <div class="content">
-                <div class="content-card">
-                    <img src="/img/snacks-src/kartofel-fri.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Картофель фри</h3>
-                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>120 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/snacks-src/krilya.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Крылья-гриль</h3>
-                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>270 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/snacks-src/naggets.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Наггетсы</h3>
-                        <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>170 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/snacks-src/roll.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Ролл</h3>
-                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>200 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/snacks-src/kartofel-fri.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Картофель фри</h3>
-                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>120 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/snacks-src/krilya.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Крылья-гриль</h3>
-                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>270 ₽</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="heading">
-                <h2 id="desertslink">Десерты</h2>
-            </div>
-            <div class="content">
-                <div class="content-card">
-                    <img src="/img/deserts-src/keks.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Картофель фри</h3>
-                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>120 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/deserts-src/blini.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Крылья-гриль</h3>
-                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>270 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/deserts-src/oladya.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Наггетсы</h3>
-                        <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>170 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/deserts-src/morojenoe.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Ролл</h3>
-                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>200 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/deserts-src/keks.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Картофель фри</h3>
-                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>120 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/deserts-src/blini.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Крылья-гриль</h3>
-                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>270 ₽</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="heading">
-                <h2 id="drinkslink">Напитки</h2>
-            </div>
-            <div class="content">
-                <div class="content-card">
-                    <img src="/img/drinks-src/adrenalin.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Adrenalin Rush</h3>
-                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>120 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/drinks-src/pepsi-max.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Pepsi Max</h3>
-                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>270 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/drinks-src/pepsi.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Pepsi</h3>
-                        <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>170 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/drinks-src/pepsi-cherry.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Pepsi Cherry</h3>
-                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>200 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/drinks-src/adrenalin.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Adrenalim RUSH</h3>
-                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>120 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/drinks-src/pepsi-max.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Крылья-гриль</h3>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>270 ₽</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="heading">
-                <h2 id="saucelink">Соусы</h2>
-            </div>
-            <div class="content">
-                <div class="content-card">
-                    <img src="/img/sauce-src/sirniy.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Картофель фри</h3>
-                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>120 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/sauce-src/kislo-sladkiy.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Крылья-гриль</h3>
-                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>270 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/sauce-src/mayonez.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Наггетсы</h3>
-                        <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>170 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/sauce-src/varenie.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Ролл</h3>
-                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>200 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/sauce-src/sirniy.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Картофель фри</h3>
-                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>120 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/sauce-src/kislo-sladkiy.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Крылья-гриль</h3>
-                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>270 ₽</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="heading">
-                <h2 id="combolink">Комбо</h2>
-            </div>
-            <div class="content">
-                <div class="content-card">
-                    <img src="/img/combo-src/combo1.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Картофель фри</h3>
-                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>120 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/combo-src/combo2.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Крылья-гриль</h3>
-                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>270 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/combo-src/combo3.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Наггетсы</h3>
-                        <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>170 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/combo-src/combo4.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Ролл</h3>
-                        <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>200 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/combo-src/combo1.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Картофель фри</h3>
-                        <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>120 ₽</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-card">
-                    <img src="/img/combo-src/combo2.png" alt="">
-                    <div class="content-card_description">
-                        <h3>Крылья-гриль</h3>
-                        <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
-                        <div class="content-card_select">
-                            <button class="button button-select">Выбрать</button>
-                            <span>270 ₽</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="content-about">
+            </section>
+            <section class="content-about">
                 <h2>Доставка пиццы в Москве</h2>
                 <div>
                     Захотелось чего-то вкусного и сытного? Желание простое и понятное, только в холодильнике все не
@@ -697,11 +690,11 @@
                         Domino’s. И не забудьте оплатить заказ курьеру!</p>
                 </div>
                 <a href="#">Показать полностью</a>
-            </div>
+            </section>
         </div>
     </main>
-    <footer>
-        <div class="footer">
+    <footer class="footer">
+        <section class="footer">
             <div class="footer__copyright">
                 <div class="logo">
                     <img src="./img/Pizza.svg" alt="">
@@ -747,7 +740,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
     </footer>
 </body>
 
