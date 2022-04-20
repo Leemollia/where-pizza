@@ -1,3 +1,10 @@
 <h1>Where Pizza<h1/>
 <div>Проект сайта доставки пиццы<div>
-Макет сайта: https://www.figma.com/file/TlqtV3siIjSlVAScqH5YxM/
+<div>Макет сайта: https://www.figma.com/file/TlqtV3siIjSlVAScqH5YxM/</div>
+<br>
+<p>Разработка ведется при помощи SCSS
+    <br>
+    Для его компиляции используется плагин для VS Code "Live Sass Compiller"
+    <br>
+    (Все настройки для компилятора находятся в ".vscode/settings.json")
+</p>
