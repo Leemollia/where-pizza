@@ -1,6 +1,6 @@
 <h1 align="center">Where Pizza<h1/>
     <a href="https://leemollia.github.io/where-pizza">Готовый вариант для просмотра</a>
-___
+---
 <div>Проект сайта доставки пиццы<div>
 <div>Макет сайта: https://www.figma.com/file/TlqtV3siIjSlVAScqH5YxM/</div>
 <br>
