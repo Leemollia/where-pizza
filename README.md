@@ -1,5 +1,6 @@
 <h1 align="center">Where Pizza<h1/> 
-![Pizza](https://user-images.githubusercontent.com/98524019/164307242-6d4cd139-1537-497e-ba8d-4ffd782191a5.svg)
+![Pizza](./img/pizza-src/pizza1.png)
+
     <div>Проект сайта доставки пиццы<div>
     <a href="https://leemollia.github.io/where-pizza">Готовый вариант для просмотра</a>
     
