@@ -1,0 +1,17 @@
+.content-about {
+    width: 850px;
+    gap: 20px;
+    line-height: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Пока не разобрался с затуханием текста с помощью градиента */
+.content-about>div {
+    line-height: 22px;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #ffffff 100%),
+        linear-gradient(0deg, #191919, #191919);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
