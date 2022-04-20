@@ -1,0 +1,21 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "where-pizza-develop",
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.formats": [ 
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+    
+            // null for all -> denotes the same path as the SASS file
+            "savePath": "/css/"
+        },
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+    
+            // null for all -> denotes the same path as the SASS file
+            "savePath": "/css/"
+        }
+    ]
+}

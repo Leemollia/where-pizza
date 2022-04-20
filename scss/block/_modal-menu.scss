@@ -1,0 +1,140 @@
+.modal-menu {
+    display: flex;
+    height: auto;
+    border-radius: 24px;
+    width: 1070px;
+}
+
+.modal__leftpanel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.modal__leftpanel img {
+    width: 80%;
+}
+
+.modal__rightpanel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rightpanel__header {
+    display: flex;
+    gap: 11px;
+}
+
+.rightpanel__header img:last-child {
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+}
+
+.rightpanel__header h4 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.rightpanel__ingredients {
+    display: flex;
+    gap: 20px;
+}
+
+.ingredient__block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 105px;
+    height: fit-content;
+    text-align: center;
+}
+
+.ingredient__block img {
+    width: 40px;
+    height: 40px;
+}
+
+.ingredient__block button {
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+}
+
+.rightpanel__dough {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.dough__type {
+    display: flex;
+}
+
+.dough__type button {
+    width: 50%;
+}
+
+.dough__size {
+    display: flex;
+}
+
+.dough__size button {
+    width: 33.333%;
+}
+
+.topping__list {
+    display: flex;
+    gap: 20px;
+}
+
+.topping__list button {
+    position: relative;
+    padding: 30px;
+}
+
+.button-modal-select {
+    background: #fff;
+    border: 1px solid #f9f9f9;
+}
+
+.button-modal-select:hover {
+    border: 1px solid #FF7010;
+}
+
+.border-select {
+    border: 1px solid #FF7010;
+}
+
+.border-select::after {
+    content: url(/img/svg/Done.svg);
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.rightpanel__price {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.price__price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FF7010;
+}
+
+.price__gramms {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.rightpanel__price button {
+    margin-left: auto;
+}

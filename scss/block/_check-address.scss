@@ -1,0 +1,42 @@
+.check-address {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #F0F0F0;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.check-address__input-label {
+    font-size: 18px;
+    margin: 0 32px;
+    min-width: fit-content;
+}
+
+.check-address__input-input {
+    width: 100%;
+    min-width: 10rem;
+    border: 1px solid #F0F0F0;
+    border-radius: 6px;
+    padding: 13px 10px;
+    margin: 16px 0;
+}
+
+.check-address__input-input:focus {
+    outline: 1px solid #FF7010;
+}
+
+.check-address__input-input::placeholder {
+    background: url(/img/svg/Location.svg) no-repeat;
+    background-size: 16px;
+    text-indent: 18px;
+}
+
+.check-address__input-button {
+    background: #FF7010;
+    min-width: 150px;
+    min-height: 48px;
+    color: white;
+    margin-left: 20px;
+    margin-right: 32px;
+}

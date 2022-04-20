@@ -6,77 +6,245 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Куда пицца</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/uikit.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <script src="/script/script.js" defer></script>
+    <script src="/script/uikit.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-info">
-            <div class="header-info__leftpanel">
-                <ul>
-                    <li>
-                        <img id="locationsvg" src="/img/Location2.svg" alt="">
-                        <span>Москва</span>
-                        <img id="arrowdownsvg" src="/img/Arrowdown.svg" alt="">
-                    </li>
-                    <li>
-                        <a href="#check-address">Проверить адрес</a>
-                    </li>
-                    <li>Среднее время доставки*: <b>00:24:19</b></li>
+    <div id="filter-menu" uk-offcanvas="overlay:true; flip:true">
+        <div class="uk-offcanvas-bar offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div class="offcanvas-bar__menu">
+                <h2>Фильтры</h2>
+                <p>Общее</p>
+                <ul class="offcanvas-bar__items">
+                    <button class="button button-border">Хит</button>
+                    <button class="button button-border">Новинка</button>
+                    <button class="button button-border">С мясом</button>
+                    <button class="button button-border">Вегетарианская</button>
+                    <button class="button button-border">С курицей</button>
+                    <button class="button button-border">Без лука</button>
+                    <button class="button button-border">С грибами</button>
+                    <button class="button button-border">С морепродуктами</button>
+                    <button class="button button-border">Барбекю</button>
+                </ul>
+                <p>Сыр</p>
+                <ul class="offcanvas-bar__items">
+                    <button class="button button-border">Реджанито</button>
+                    <button class="button button-border">Моцарелла</button>
+                    <button class="button button-border">Чеддер</button>
+                    <button class="button button-border">С голубой плесенью</button>
+                    <button class="button button-border">Смесь итальянских сыров</button>
+                    <button class="button button-border">Без лука</button>
+                    <button class="button button-border">Мягкий молодой сыр</button>
+                </ul>
+                <p>Мясо</p>
+                <ul class="offcanvas-bar__items">
+                    <button class="button button-border">Пепперони</button>
+                    <button class="button button-border">Свинина</button>
+                    <button class="button button-border">Ветчина</button>
+                    <button class="button button-border">Бекон</button>
+                    <button class="button button-border">Чоризо</button>
+                    <button class="button button-border">Колбаски</button>
+                    <button class="button button-border">Куриная грудка</button>
+                </ul>
+                <p>Компонент</p>
+                <ul class="offcanvas-bar__items">
+                    <button class="button button-border">Креветка</button>
+                    <button class="button button-border">Ананасы</button>
+                    <button class="button button-border">Шампиньоны</button>
+                    <button class="button button-border">Лук</button>
+                    <button class="button button-border">Перец халапеньо</button>
+                    <button class="button button-border">Орегано</button>
+                    <button class="button button-border">Зеленый перец</button>
+                    <button class="button button-border">Томаты</button>
+                    <button class="button button-border">Чеснок</button>
+                    <button class="button button-border">Красный перец</button>
+                    <button class="button button-border">Оливки</button>
+                    <button class="button button-border">Маслины</button>
+                    <button class="button button-border">Клубника</button>
+                    <button class="button button-border">Смесь итальянских трав</button>
                 </ul>
             </div>
-            <div class="header-info__rightpanel">
-                <ul>
-                    <li>Время работы c 11:00 до 23:00</li>
-                    <li>
-                        <img id="accountsvg" src="/img/Account.svg" alt="">
-                        <span>Войти в аккаунт</span>
-                    </li>
-                </ul>
+            <div class="offcanvas-bar__footer">
+                <button class="button button-border">Сбросить</button>
+                <button class="button button-border-focus">Применить</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal-menu" class="uk-flex-top" uk-modal>
+        <div class="modal-menu uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+
+            <div class="modal__leftpanel">
+                <img src="/img/pizza-src/pizza1.png" alt="">
+            </div>
+            <div class="modal__rightpanel">
+                <div class="rightpanel__header">
+                    <img src="/img/svg/Fire.svg" alt="">
+                    <h4>Пепперони по-деревенски</h4>
+                    <img src="/img/svg/Info.svg" alt="">
+                </div>
+                <div class="rightpanel__ingredients">
+                    <div class="ingredient__block">
+                        <button class="button button-modal-select">
+                            <img src="/img/svg/Cheese.svg" alt="">
+                        </button>
+                        <p>Моцарелла</p>
+                    </div>
+                    <div class="ingredient__block">
+                        <button class="button button-modal-select">
+                            <img src="/img/svg/Cucumber.svg" alt="">
+                        </button>
+                        <p>Огурцы маринованные</p>
+                    </div>
+                    <div class="ingredient__block">
+                        <button class="button button-modal-select">
+                            <img src="/img/svg/Pepperoni.svg" alt="">
+                        </button>
+                        <p>Пепперони</p>
+                    </div>
+                    <div class="ingredient__block">
+                        <button class="button button-modal-select">
+                            <img src="/img/svg/Sause.svg" alt="">
+                        </button>
+                        <p>Томатный соус</p>
+                    </div>
+                </div>
+                <div class="rightpanel__dough">
+                    <div class="dough__type">
+                        <button class="button button-border">Традиционное</button>
+                        <button class="button button-border">Тонкое</button>
+                    </div>
+                    <div class="dough__size">
+                        <button class="button button-border">20 см</button>
+                        <button class="button button-border">28 см</button>
+                        <button class="button button-border">33 см</button>
+                    </div>
+                </div>
+                <div class="rightpanel__topping">
+                    <div class="topping__title">
+                        Добавьте в пиццу
+                    </div>
+                    <div class="topping__list">
+                        <div class="ingredient__block">
+                            <button class="button button-modal-select">
+                                <img src="/img/svg/Cheese.svg" alt="">
+                            </button>
+                            <p>Моцарелла</p>
+                        </div>
+                        <div class="ingredient__block">
+                            <button class="button button-modal-select">
+                                <img src="/img/svg/Mushrooms.svg" alt="">
+                            </button>
+                            <p>Шампиньоны</p>
+                        </div>
+                        <div class="ingredient__block">
+                            <button class="button button-modal-select">
+                                <img src="/img/svg/Onion.svg" alt="">
+                            </button>
+                            <p>Красный лук</p>
+                        </div>
+                        <div class="ingredient__block">
+                            <button class="button button-modal-select">
+                                <img src="/img/svg/BellPepper.svg" alt="">
+                            </button>
+                            <p>Сладкий перец</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightpanel__price">
+                    <div class="price__price">Итого: 379 ₽</div>
+                    <div class="price__gramms">410 г</div>
+                    <button class="button button-border">Добавить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header-info">
+                <div class="header-info__leftpanel">
+                    <ul>
+                        <li>
+                            <img id="locationsvg" src="/img/svg/Location2.svg" alt="">
+                            <span>Москва</span>
+                            <img id="arrowdownsvg" src="/img/svg/Arrowdown.svg" alt="">
+                        </li>
+                        <li>
+                            <a href="#check-address">Проверить адрес</a>
+                        </li>
+                        <li>Среднее время доставки*: <b>00:24:19</b></li>
+                    </ul>
+                </div>
+                <div class="header-info__rightpanel">
+                    <ul>
+                        <li>Время работы c 11:00 до 23:00</li>
+                        <li>
+                            <img id="accountsvg" src="/img/svg/Account.svg" alt="">
+                            <span>Войти в аккаунт</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
-    <main class="main">
+    <main>
         <div class="header-sticky">
-            <ul class="header-sticky__nav-bar">
-                <a href="#" class="sticky__logo">
-                    <img src="./img/Pizza.svg" alt="">
-                    <span>Куда пицца</span>
-                </a>
-                <div class="sticky__links">
-                    <a href="#advertisinglink">Акции</a>
-                    <a href="#pizzalink">Пицца</a>
-                    <a href="#sushilink">Суши</a>
-                    <a href="#drinkslink">Напитки</a>
-                    <a href="#snackslink">Закуски</a>
-                    <a href="#combolink">Комбо</a>
-                    <a href="#desertslink">Десерты</a>
-                    <a href="#saucelink">Соусы</a>
-                    <a href="#" class="open-popupother">Другое
-                        <img id="arrowdownsvg" src="/img/Arrowdown.svg" alt="">
-                        <div class="popup-other">
-                            <a href="">Акции</a>
-                            <a href="">О компании</a>
-                            <a href="">Пользовательское соглашение</a>
-                            <a href="">Условия гарантии</a>
-                            <a href="">Ресторан</a>
-                            <a href="">Контакты</a>
-                            <a href="">Поддержка</a>
-                            <a href="">Отследить заказ</a>
-                        </div>
+            <div class="container">
+                <ul class="header-sticky__nav-bar">
+                    <a href="#" class="logo">
+                        <img src="./img/svg/Pizza.svg" alt="">
+                        <span>Куда пицца</span>
                     </a>
-                </div>
-                <div class="sticky__cart">
-                    <button class="button button-cart">
-                        <img src="/img/Shoppingbag.svg" alt="">
-                        <span>0 ₽</span>
-                    </button>
-                </div>
-            </ul>
+                    <div class="sticky__links">
+                        <a href="#advertisinglink">Акции</a>
+                        <a href="#pizzalink">Пицца</a>
+                        <a href="#sushilink">Суши</a>
+                        <a href="#drinkslink">Напитки</a>
+                        <a href="#snackslink">Закуски</a>
+                        <a href="#combolink">Комбо</a>
+                        <a href="#desertslink">Десерты</a>
+                        <a href="#saucelink">Соусы</a>
+                        <a href="#">Другое
+                            <img id="arrowdownsvg" src="/img/svg/Arrowdown.svg" alt="">
+                        </a>
+                        <div class="popup-other" uk-dropdown="mode:click">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Пользовательское соглашение</a></li>
+                                <li><a href="#">Условия гарантии</a></li>
+                                <li><a href="#">Ресторан</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Поддержка</a></li>
+                                <li><a href="#">Отследить заказ</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="sticky__cart">
+                        <button class="button button-cart">
+                            <img src="/img/svg/Shoppingbag.svg" alt="">
+                            <span>0 ₽</span>
+                        </button>
+                    </div>
+                    <nav class="uk-hidden@m uk-navbar uk-navbar-container" style="background-color: #fff;">
+                        <div class="uk-navbar-center">
+                            <a class="uk-navbar-toggle" href="#" style="min-height: 30px;">
+                                <img src="/img/svg/Menu.svg" alt=""></a>
+                        </div>
+                    </nav>
+                </ul>
+            </div>
+        </div>
         </div>
         <div class="container">
             <nav class="nav-bar">
@@ -142,7 +310,7 @@
                 <div class="heading heading-filter">
                     <h2 id="pizzalink">Пицца</h2>
                     <button class="button button-filter">
-                        <img src="/img/Filter.svg" alt="">
+                        <img src="/img/svg/Filter.svg" alt="">
                         <span>Фильтры</span>
                     </button>
                 </div>
@@ -239,7 +407,7 @@
                 <div class="heading heading-filter">
                     <h2 id="sushilink">Суши</h2>
                     <button class="button button-filter">
-                        <img src="/img/Filter.svg" alt="">
+                        <img src="/img/svg/Filter.svg" alt="">
                         <span>Фильтры</span>
                     </button>
                 </div>
@@ -693,54 +861,56 @@
             </section>
         </div>
     </main>
-    <footer class="footer">
-        <section class="footer">
-            <div class="footer__copyright">
-                <div class="logo">
-                    <img src="./img/Pizza.svg" alt="">
-                    <span>Куда пицца</span>
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__copyright">
+                    <div class="logo">
+                        <img src="./img/svg/Pizza.svg" alt="">
+                        <span>Куда пицца</span>
+                    </div>
+                    <p>© Copyright 2021 — Куда Пицца</p>
                 </div>
-                <p>© Copyright 2021 — Куда Пицца</p>
-            </div>
-            <div class="footer__column">
-                <h4>Куда пицца</h4>
-                <div class="footer__refs">
-                    <a href="">О компании</a>
-                    <a href="">Пользовательское соглашение</a>
-                    <a href="">Условия гарантии</a>
+                <div class="footer__column">
+                    <h4>Куда пицца</h4>
+                    <div class="footer__refs">
+                        <a href="">О компании</a>
+                        <a href="">Пользовательское соглашение</a>
+                        <a href="">Условия гарантии</a>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <h4>Помощь</h4>
+                    <div class="footer__refs">
+                        <a href="">Ресторан</a>
+                        <a href="">Контакты</a>
+                        <a href="">Поддержка</a>
+                        <a href="">Отследить заказ</a>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <h4>Контакты</h4>
+                    <div class="footer__refs">
+                        <ul>
+                            <li>
+                                <img src="/img/svg/Phone.svg" alt="">
+                                <a href="tel:+7(926) 223-10-11">+7(926) 223-10-11</a>
+                            </li>
+                            <li>
+                                <img src="/img/svg/Location2.svg" alt="">
+                                <a href="">Москва, ул. Юных Ленинцев, д.99</a>
+                            </li>
+                            <li>
+                                <img style="display: inline-block;" src="/img/svg/Facebook.svg" alt="">
+                                <a href="http://" target="_blank" rel="noopener noreferrer">Facebook</a>
+                                <img src="/img/svg/Instagram.svg" alt="">
+                                <a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="footer__column">
-                <h4>Помощь</h4>
-                <div class="footer__refs">
-                    <a href="">Ресторан</a>
-                    <a href="">Контакты</a>
-                    <a href="">Поддержка</a>
-                    <a href="">Отследить заказ</a>
-                </div>
-            </div>
-            <div class="footer__column">
-                <h4>Контакты</h4>
-                <div class="footer__refs">
-                    <ul>
-                        <li>
-                            <img src="/img/Phone.svg" alt="">
-                            <a href="tel:+7(926) 223-10-11">+7(926) 223-10-11</a>
-                        </li>
-                        <li>
-                            <img src="/img/Location2.svg" alt="">
-                            <a href="">Москва, ул. Юных Ленинцев, д.99</a>
-                        </li>
-                        <li>
-                            <img style="display: inline-block;" src="/img/Facebook.svg" alt="">
-                            <a href="http://" target="_blank" rel="noopener noreferrer">Facebook</a>
-                            <img src="/img/Instagram.svg" alt="">
-                            <a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        </div>
     </footer>
 </body>
 
