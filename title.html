@@ -228,7 +228,6 @@
                                 <li><a href="#">Отследить заказ</a></li>
                             </ul>
                         </div>
-
                     </div>
                     <div class="sticky__cart">
                         <button class="button button-cart">
@@ -247,8 +246,8 @@
         </div>
         </div>
         <div class="container">
-            <nav class="nav-bar">
-                <ul class="nav-bar__list">
+            <nav class="nav-bar" uk-slider="finite: false">
+                <ul class="nav-bar__list uk-slider-items">
                     <a href="#advertisinglink">
                         <img src="/img/nav-bar-src/Account.svg" alt="">
                         <span>Акции</span>
@@ -283,28 +282,39 @@
                     </a>
                 </ul>
             </nav>
-            <section class="advertising" id="advertisinglink">
-                <a href="#" class="advertising__card">
-                    <img src="img/pizza-src/tripple-pizza.svg" alt="">
-                    <h4>3 средние пиццы от 999 рублей</h4>
-                </a>
-                <a href="#" class="advertising__card advertising__card__red">
-                    <img src="img/pizza-src/pizza-box.svg" alt="">
-                    <h4>Кэшбек 10% на самовывоз (доставка)</h4>
-                </a>
-                <a href="#" class="advertising__card">
-                    <img src="img/pizza-src/tripple-pizza.svg" alt="">
-                    <h4>3 средние пиццы от 999 рублей</h4>
-                </a>
-                <a href="#" class="advertising__card advertising__card__red">
-                    <img src="img/pizza-src/pizza-box.svg" alt="">
-                    <h4>Кэшбек 10% на самовывоз (доставка)</h4>
-                </a>
+            <section class="advertising" id="advertisinglink"FFF>
+                <nav uk-slider>
+                    <ul class="advertising__content uk-slider-items">
+                        <li><a href="#" class="advertising__card">
+                                <img src="img/pizza-src/tripple-pizza.svg" alt="">
+                                <h4>3 средние пиццы от 999 рублей</h4>
+                            </a>
+                        </li>
+                        <li><a href="#" class="advertising__card advertising__card__red">
+                                <img src="img/pizza-src/pizza-box.svg" alt="">
+                                <h4>Кэшбек 10% на самовывоз (доставка)</h4>
+                            </a>
+                        </li>
+                        <li><a href="#" class="advertising__card">
+                                <img src="img/pizza-src/tripple-pizza.svg" alt="">
+                                <h4>3 средние пиццы от 999 рублей</h4>
+                            </a>
+                        </li>
+                        <li><a href="#" class="advertising__card advertising__card__red">
+                                <img src="img/pizza-src/pizza-box.svg" alt="">
+                                <h4>Кэшбек 10% на самовывоз (доставка)</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </section>
             <section class="check-address" id="check-address">
                 <label class="check-address__input-label" for="address">Проверить адрес доставки</label>
-                <input class="check-address__input-input" placeholder="Адрес" type="search" id="address">
-                <input class="button check-address__input-button" type="button" value="Проверить">
+                <div class="check-address__wrapper">
+                    <input class="check-address__input-input" placeholder="Адрес" type="search" id="address">
+                    <button class="button check-address__input-button"></button>
+                </div>
+                
             </section>
             <section class="main-content">
                 <div class="heading heading-filter">
@@ -864,12 +874,11 @@
     <footer>
         <div class="container">
             <div class="footer__wrapper">
-                <div class="footer__copyright">
+                <div class="footer__column">
                     <div class="logo">
                         <img src="./img/svg/Pizza.svg" alt="">
                         <span>Куда пицца</span>
                     </div>
-                    <p>© Copyright 2021 — Куда Пицца</p>
                 </div>
                 <div class="footer__column">
                     <h4>Куда пицца</h4>
@@ -909,6 +918,10 @@
                         </ul>
                     </div>
                 </div>
+
+            </div>
+            <div class="footer__copyright">
+                <p>© Copyright 2021 — Куда Пицца</p>
             </div>
         </div>
     </footer>

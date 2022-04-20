@@ -11,11 +11,26 @@ header {
     padding: 11px 0;
     font-size: 14px;
     background: #fff;
+
+    .header-info__leftpanel {
+        
+        ul {
+            padding: 0;
+        }
+    }
+
+    .header-info__rightpanel {
+        ul {
+            display: flex;
+            justify-content: end;
+            padding: 0;
+        }
+    }
 }
 
 .header-info ul li {
     display: inline-block;
-    padding-right: 40px;
+    padding-right: 20px;
 }
 
 .header-info ul li a {
@@ -117,4 +132,14 @@ header {
     pointer-events: all;
     padding: 5px 20px;
     --uk-position-offset: 30px;
+}
+
+@media screen and (max-width: $tabletWidth) {
+    .header-info__leftpanel {
+        width: 100%;
+
+        ul {
+            justify-content: space-between;
+        }
+    }
 }

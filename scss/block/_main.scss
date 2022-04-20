@@ -1,3 +1,7 @@
+$desktopWidth:1200px;
+$tabletWidth:960px;
+$mobileWidth:640px;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -39,7 +43,8 @@ h4 {
 }
 
 .container {
-    max-width: 1120px;
+    max-width: 1440px;
+    padding: 0 40px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -81,15 +86,15 @@ h4 {
 }
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: $desktopWidth){
    .container {
        width: 970px;
    } 
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: $tabletWidth) {
     .container {
-        width: 690px;
+        width: 640px;
     }
 
     .header-info__leftpanel ul li:nth-child(2) {
@@ -114,9 +119,9 @@ h4 {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: $mobileWidth) {
     .container {
-        width: 380px;
-    }
-
+        width: 100%;
+        padding: 0 20px;
+    }    
 }
