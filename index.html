@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <script src="/script/script.js" defer></script>
-    <script src="/script/uikit.js"></script>
+    <script src="./script/script.js" defer></script>
+    <script src="./script/uikit.js"></script>
 </head>
 
 <body>
@@ -83,36 +83,36 @@
             <button class="uk-modal-close-default" type="button" uk-close></button>
 
             <div class="modal__leftpanel">
-                <img src="/img/pizza-src/pizza1.png" alt="">
+                <img src="./img/pizza-src/pizza1.png" alt="">
             </div>
             <div class="modal__rightpanel">
                 <div class="rightpanel__header">
-                    <img src="/img/svg/Fire.svg" alt="">
+                    <img src="./img/svg/Fire.svg" alt="">
                     <h4>Пепперони по-деревенски</h4>
-                    <img src="/img/svg/Info.svg" alt="">
+                    <img src="./img/svg/Info.svg" alt="">
                 </div>
                 <div class="rightpanel__ingredients">
                     <div class="ingredient__block">
                         <button class="button button-modal-select">
-                            <img src="/img/svg/Cheese.svg" alt="">
+                            <img src="./img/svg/Cheese.svg" alt="">
                         </button>
                         <p>Моцарелла</p>
                     </div>
                     <div class="ingredient__block">
                         <button class="button button-modal-select">
-                            <img src="/img/svg/Cucumber.svg" alt="">
+                            <img src="./img/svg/Cucumber.svg" alt="">
                         </button>
                         <p>Огурцы маринованные</p>
                     </div>
                     <div class="ingredient__block">
                         <button class="button button-modal-select">
-                            <img src="/img/svg/Pepperoni.svg" alt="">
+                            <img src="./img/svg/Pepperoni.svg" alt="">
                         </button>
                         <p>Пепперони</p>
                     </div>
                     <div class="ingredient__block">
                         <button class="button button-modal-select">
-                            <img src="/img/svg/Sause.svg" alt="">
+                            <img src="./img/svg/Sause.svg" alt="">
                         </button>
                         <p>Томатный соус</p>
                     </div>
@@ -135,25 +135,25 @@
                     <div class="topping__list">
                         <div class="ingredient__block">
                             <button class="button button-modal-select">
-                                <img src="/img/svg/Cheese.svg" alt="">
+                                <img src="./img/svg/Cheese.svg" alt="">
                             </button>
                             <p>Моцарелла</p>
                         </div>
                         <div class="ingredient__block">
                             <button class="button button-modal-select">
-                                <img src="/img/svg/Mushrooms.svg" alt="">
+                                <img src="./img/svg/Mushrooms.svg" alt="">
                             </button>
                             <p>Шампиньоны</p>
                         </div>
                         <div class="ingredient__block">
                             <button class="button button-modal-select">
-                                <img src="/img/svg/Onion.svg" alt="">
+                                <img src="./img/svg/Onion.svg" alt="">
                             </button>
                             <p>Красный лук</p>
                         </div>
                         <div class="ingredient__block">
                             <button class="button button-modal-select">
-                                <img src="/img/svg/BellPepper.svg" alt="">
+                                <img src="./img/svg/BellPepper.svg" alt="">
                             </button>
                             <p>Сладкий перец</p>
                         </div>
@@ -174,9 +174,9 @@
                 <div class="header-info__leftpanel">
                     <ul>
                         <li>
-                            <img id="locationsvg" src="/img/svg/Location2.svg" alt="">
+                            <img id="locationsvg" src="./img/svg/Location2.svg" alt="">
                             <span>Москва</span>
-                            <img id="arrowdownsvg" src="/img/svg/Arrowdown.svg" alt="">
+                            <img id="arrowdownsvg" src="./img/svg/Arrowdown.svg" alt="">
                         </li>
                         <li>
                             <a href="#check-address">Проверить адрес</a>
@@ -188,7 +188,7 @@
                     <ul>
                         <li>Время работы c 11:00 до 23:00</li>
                         <li>
-                            <img id="accountsvg" src="/img/svg/Account.svg" alt="">
+                            <img id="accountsvg" src="./img/svg/Account.svg" alt="">
                             <span>Войти в аккаунт</span>
                         </li>
                     </ul>
@@ -214,7 +214,7 @@
                         <a href="#desertslink">Десерты</a>
                         <a href="#saucelink">Соусы</a>
                         <a href="#">Другое
-                            <img id="arrowdownsvg" src="/img/svg/Arrowdown.svg" alt="">
+                            <img id="arrowdownsvg" src="./img/svg/Arrowdown.svg" alt="">
                         </a>
                         <div class="popup-other" uk-dropdown="mode:click">
                             <ul class="uk-nav uk-dropdown-nav">
@@ -228,18 +228,17 @@
                                 <li><a href="#">Отследить заказ</a></li>
                             </ul>
                         </div>
-
                     </div>
                     <div class="sticky__cart">
                         <button class="button button-cart">
-                            <img src="/img/svg/Shoppingbag.svg" alt="">
+                            <img src="./img/svg/Shoppingbag.svg" alt="">
                             <span>0 ₽</span>
                         </button>
                     </div>
                     <nav class="uk-hidden@m uk-navbar uk-navbar-container" style="background-color: #fff;">
                         <div class="uk-navbar-center">
                             <a class="uk-navbar-toggle" href="#" style="min-height: 30px;">
-                                <img src="/img/svg/Menu.svg" alt=""></a>
+                                <img src="./img/svg/Menu.svg" alt=""></a>
                         </div>
                     </nav>
                 </ul>
@@ -247,77 +246,88 @@
         </div>
         </div>
         <div class="container">
-            <nav class="nav-bar">
-                <ul class="nav-bar__list">
+            <nav class="nav-bar" uk-slider="finite: false">
+                <ul class="nav-bar__list uk-slider-items">
                     <a href="#advertisinglink">
-                        <img src="/img/nav-bar-src/Account.svg" alt="">
+                        <img src="./img/nav-bar-src/Account.svg" alt="">
                         <span>Акции</span>
                     </a>
                     <a href="#pizzalink">
-                        <img src="/img/nav-bar-src/Pizza.svg" alt="">
+                        <img src="./img/nav-bar-src/Pizza.svg" alt="">
                         <span>Пицца</span>
                     </a>
                     <a href="#sushilink">
-                        <img src="/img/nav-bar-src/Sushi.svg" alt="">
+                        <img src="./img/nav-bar-src/Sushi.svg" alt="">
                         <span>Суши</span>
                     </a>
                     <a href="#drinkslink">
-                        <img src="/img/nav-bar-src/Drink.svg" alt="">
+                        <img src="./img/nav-bar-src/Drink.svg" alt="">
                         <span>Напитки</span>
                     </a>
                     <a href="#snackslink">
-                        <img src="/img/nav-bar-src/Snacks.svg" alt="">
+                        <img src="./img/nav-bar-src/Snacks.svg" alt="">
                         <span>Закуски</span>
                     </a>
                     <a href="#combolink">
-                        <img src="/img/nav-bar-src/Combo.svg" alt="">
+                        <img src="./img/nav-bar-src/Combo.svg" alt="">
                         <span>Комбо</span>
                     </a>
                     <a href="#desertslink">
-                        <img src="/img/nav-bar-src/Dessert.svg" alt="">
+                        <img src="./img/nav-bar-src/Dessert.svg" alt="">
                         <span>Десерты</span>
                     </a>
                     <a href="#saucelink">
-                        <img src="/img/nav-bar-src/Sauce.svg" alt="">
+                        <img src="./img/nav-bar-src/Sauce.svg" alt="">
                         <span>Соусы</span>
                     </a>
                 </ul>
             </nav>
-            <section class="advertising" id="advertisinglink">
-                <a href="#" class="advertising__card">
-                    <img src="img/pizza-src/tripple-pizza.svg" alt="">
-                    <h4>3 средние пиццы от 999 рублей</h4>
-                </a>
-                <a href="#" class="advertising__card advertising__card__red">
-                    <img src="img/pizza-src/pizza-box.svg" alt="">
-                    <h4>Кэшбек 10% на самовывоз (доставка)</h4>
-                </a>
-                <a href="#" class="advertising__card">
-                    <img src="img/pizza-src/tripple-pizza.svg" alt="">
-                    <h4>3 средние пиццы от 999 рублей</h4>
-                </a>
-                <a href="#" class="advertising__card advertising__card__red">
-                    <img src="img/pizza-src/pizza-box.svg" alt="">
-                    <h4>Кэшбек 10% на самовывоз (доставка)</h4>
-                </a>
+            <section class="advertising" id="advertisinglink"FFF>
+                <nav uk-slider>
+                    <ul class="advertising__content uk-slider-items">
+                        <li><a href="#" class="advertising__card">
+                                <img src="img/pizza-src/tripple-pizza.svg" alt="">
+                                <h4>3 средние пиццы от 999 рублей</h4>
+                            </a>
+                        </li>
+                        <li><a href="#" class="advertising__card advertising__card__red">
+                                <img src="img/pizza-src/pizza-box.svg" alt="">
+                                <h4>Кэшбек 10% на самовывоз (доставка)</h4>
+                            </a>
+                        </li>
+                        <li><a href="#" class="advertising__card">
+                                <img src="img/pizza-src/tripple-pizza.svg" alt="">
+                                <h4>3 средние пиццы от 999 рублей</h4>
+                            </a>
+                        </li>
+                        <li><a href="#" class="advertising__card advertising__card__red">
+                                <img src="img/pizza-src/pizza-box.svg" alt="">
+                                <h4>Кэшбек 10% на самовывоз (доставка)</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </section>
             <section class="check-address" id="check-address">
                 <label class="check-address__input-label" for="address">Проверить адрес доставки</label>
-                <input class="check-address__input-input" placeholder="Адрес" type="search" id="address">
-                <input class="button check-address__input-button" type="button" value="Проверить">
+                <div class="check-address__wrapper">
+                    <input class="check-address__input-input" placeholder="Адрес" type="search" id="address">
+                    <button class="button check-address__input-button"></button>
+                </div>
+                
             </section>
             <section class="main-content">
                 <div class="heading heading-filter">
                     <h2 id="pizzalink">Пицца</h2>
                     <button class="button button-filter">
-                        <img src="/img/svg/Filter.svg" alt="">
+                        <img src="./img/svg/Filter.svg" alt="">
                         <span>Фильтры</span>
                     </button>
                 </div>
                 <div class="content">
                     <div class="content-card">
                         <div class="content-card__label">New</div>
-                        <img src="/img/pizza-src/pizza2.png" alt="">
+                        <img src="./img/pizza-src/pizza2.png" alt="">
                         <div class="content-card_description">
                             <h3>EASY PEASY огуречный расколбас</h3>
                             <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -333,7 +343,7 @@
                     </div>
                     <div class="content-card">
                         <div class="content-card__label">Хит</div>
-                        <img src="/img/pizza-src/pizza2.png" alt="">
+                        <img src="./img/pizza-src/pizza2.png" alt="">
                         <div class="content-card_description">
                             <h3>EASY PEASY огуречный расколбас</h3>
                             <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -348,7 +358,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/pizza-src/pizza2.png" alt="">
+                        <img src="./img/pizza-src/pizza2.png" alt="">
                         <div class="content-card_description">
                             <h3>EASY PEASY огуречный расколбас</h3>
                             <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -363,7 +373,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/pizza-src/pizza2.png" alt="">
+                        <img src="./img/pizza-src/pizza2.png" alt="">
                         <div class="content-card_description">
                             <h3>EASY PEASY огуречный расколбас</h3>
                             <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -378,7 +388,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/pizza-src/pizza1.png" alt="">
+                        <img src="./img/pizza-src/pizza1.png" alt="">
                         <div class="content-card_description">
                             <h3>Чикен сладкий чили</h3>
                             <p>Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соус, Ещё что-то</p>
@@ -389,7 +399,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/pizza-src/pizza2.png" alt="">
+                        <img src="./img/pizza-src/pizza2.png" alt="">
                         <div class="content-card_description">
                             <h3>EASY PEASY огуречный расколбас</h3>
                             <p>Курица, Лук, Перец Халапеньо Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -407,14 +417,14 @@
                 <div class="heading heading-filter">
                     <h2 id="sushilink">Суши</h2>
                     <button class="button button-filter">
-                        <img src="/img/svg/Filter.svg" alt="">
+                        <img src="./img/svg/Filter.svg" alt="">
                         <span>Фильтры</span>
                     </button>
                 </div>
                 <div class="content">
                     <div class="content-card">
                         <div class="content-card__label">New</div>
-                        <img src="/img/sushu-src/fhiladelphia-crunch.jpg" alt="">
+                        <img src="./img/sushu-src/fhiladelphia-crunch.jpg" alt="">
                         <div class="content-card_description">
                             <h3>Филадельфия кранч</h3>
                             <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
@@ -426,7 +436,7 @@
                     </div>
                     <div class="content-card">
                         <div class="content-card__label">Хит</div>
-                        <img src="/img/sushu-src/pfiladilphia-crembrule.jpg" alt="">
+                        <img src="./img/sushu-src/pfiladilphia-crembrule.jpg" alt="">
                         <div class="content-card_description">
                             <h3>Филадельфия крем-брюле</h3>
                             <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
@@ -437,7 +447,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/sushu-src/super-philadilphia.jpg" alt="">
+                        <img src="./img/sushu-src/super-philadilphia.jpg" alt="">
                         <div class="content-card_description">
                             <h3>Супер Филадельфия</h3>
                             <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
@@ -448,7 +458,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/sushu-src/tigr-mama.jpg" alt="">
+                        <img src="./img/sushu-src/tigr-mama.jpg" alt="">
                         <div class="content-card_description">
                             <h3>Тигр мама</h3>
                             <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
@@ -459,7 +469,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/sushu-src/fhiladelphia-crunch.jpg" alt="">
+                        <img src="./img/sushu-src/fhiladelphia-crunch.jpg" alt="">
                         <div class="content-card_description">
                             <h3>Филадельфия кранч</h3>
                             <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
@@ -470,7 +480,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/sushu-src/pfiladilphia-crembrule.jpg" alt="">
+                        <img src="./img/sushu-src/pfiladilphia-crembrule.jpg" alt="">
                         <div class="content-card_description">
                             <h3>Филадельфия крем-брюле</h3>
                             <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
@@ -486,7 +496,7 @@
                 </div>
                 <div class="content">
                     <div class="content-card">
-                        <img src="/img/snacks-src/kartofel-fri.png" alt="">
+                        <img src="./img/snacks-src/kartofel-fri.png" alt="">
                         <div class="content-card_description">
                             <h3>Картофель фри</h3>
                             <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
@@ -497,7 +507,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/snacks-src/krilya.png" alt="">
+                        <img src="./img/snacks-src/krilya.png" alt="">
                         <div class="content-card_description">
                             <h3>Крылья-гриль</h3>
                             <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
@@ -508,7 +518,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/snacks-src/naggets.png" alt="">
+                        <img src="./img/snacks-src/naggets.png" alt="">
                         <div class="content-card_description">
                             <h3>Наггетсы</h3>
                             <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
@@ -519,7 +529,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/snacks-src/roll.png" alt="">
+                        <img src="./img/snacks-src/roll.png" alt="">
                         <div class="content-card_description">
                             <h3>Ролл</h3>
                             <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
@@ -530,7 +540,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/snacks-src/kartofel-fri.png" alt="">
+                        <img src="./img/snacks-src/kartofel-fri.png" alt="">
                         <div class="content-card_description">
                             <h3>Картофель фри</h3>
                             <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
@@ -541,7 +551,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/snacks-src/krilya.png" alt="">
+                        <img src="./img/snacks-src/krilya.png" alt="">
                         <div class="content-card_description">
                             <h3>Крылья-гриль</h3>
                             <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
@@ -557,7 +567,7 @@
                 </div>
                 <div class="content">
                     <div class="content-card">
-                        <img src="/img/deserts-src/keks.png" alt="">
+                        <img src="./img/deserts-src/keks.png" alt="">
                         <div class="content-card_description">
                             <h3>Картофель фри</h3>
                             <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
@@ -568,7 +578,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/deserts-src/blini.png" alt="">
+                        <img src="./img/deserts-src/blini.png" alt="">
                         <div class="content-card_description">
                             <h3>Крылья-гриль</h3>
                             <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
@@ -579,7 +589,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/deserts-src/oladya.png" alt="">
+                        <img src="./img/deserts-src/oladya.png" alt="">
                         <div class="content-card_description">
                             <h3>Наггетсы</h3>
                             <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
@@ -590,7 +600,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/deserts-src/morojenoe.png" alt="">
+                        <img src="./img/deserts-src/morojenoe.png" alt="">
                         <div class="content-card_description">
                             <h3>Ролл</h3>
                             <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
@@ -601,7 +611,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/deserts-src/keks.png" alt="">
+                        <img src="./img/deserts-src/keks.png" alt="">
                         <div class="content-card_description">
                             <h3>Картофель фри</h3>
                             <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
@@ -612,7 +622,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/deserts-src/blini.png" alt="">
+                        <img src="./img/deserts-src/blini.png" alt="">
                         <div class="content-card_description">
                             <h3>Крылья-гриль</h3>
                             <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
@@ -628,7 +638,7 @@
                 </div>
                 <div class="content">
                     <div class="content-card">
-                        <img src="/img/drinks-src/adrenalin.png" alt="">
+                        <img src="./img/drinks-src/adrenalin.png" alt="">
                         <div class="content-card_description">
                             <h3>Adrenalin Rush</h3>
                             <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
@@ -639,7 +649,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/drinks-src/pepsi-max.png" alt="">
+                        <img src="./img/drinks-src/pepsi-max.png" alt="">
                         <div class="content-card_description">
                             <h3>Pepsi Max</h3>
                             <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
@@ -650,7 +660,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/drinks-src/pepsi.png" alt="">
+                        <img src="./img/drinks-src/pepsi.png" alt="">
                         <div class="content-card_description">
                             <h3>Pepsi</h3>
                             <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
@@ -661,7 +671,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/drinks-src/pepsi-cherry.png" alt="">
+                        <img src="./img/drinks-src/pepsi-cherry.png" alt="">
                         <div class="content-card_description">
                             <h3>Pepsi Cherry</h3>
                             <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
@@ -672,7 +682,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/drinks-src/adrenalin.png" alt="">
+                        <img src="./img/drinks-src/adrenalin.png" alt="">
                         <div class="content-card_description">
                             <h3>Adrenalim RUSH</h3>
                             <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
@@ -683,7 +693,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/drinks-src/pepsi-max.png" alt="">
+                        <img src="./img/drinks-src/pepsi-max.png" alt="">
                         <div class="content-card_description">
                             <h3>Крылья-гриль</h3>
                             <div class="content-card_select">
@@ -698,7 +708,7 @@
                 </div>
                 <div class="content">
                     <div class="content-card">
-                        <img src="/img/sauce-src/sirniy.png" alt="">
+                        <img src="./img/sauce-src/sirniy.png" alt="">
                         <div class="content-card_description">
                             <h3>Картофель фри</h3>
                             <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
@@ -709,7 +719,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/sauce-src/kislo-sladkiy.png" alt="">
+                        <img src="./img/sauce-src/kislo-sladkiy.png" alt="">
                         <div class="content-card_description">
                             <h3>Крылья-гриль</h3>
                             <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
@@ -720,7 +730,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/sauce-src/mayonez.png" alt="">
+                        <img src="./img/sauce-src/mayonez.png" alt="">
                         <div class="content-card_description">
                             <h3>Наггетсы</h3>
                             <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
@@ -731,7 +741,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/sauce-src/varenie.png" alt="">
+                        <img src="./img/sauce-src/varenie.png" alt="">
                         <div class="content-card_description">
                             <h3>Ролл</h3>
                             <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
@@ -742,7 +752,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/sauce-src/sirniy.png" alt="">
+                        <img src="./img/sauce-src/sirniy.png" alt="">
                         <div class="content-card_description">
                             <h3>Картофель фри</h3>
                             <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
@@ -753,7 +763,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/sauce-src/kislo-sladkiy.png" alt="">
+                        <img src="./img/sauce-src/kislo-sladkiy.png" alt="">
                         <div class="content-card_description">
                             <h3>Крылья-гриль</h3>
                             <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
@@ -769,7 +779,7 @@
                 </div>
                 <div class="content">
                     <div class="content-card">
-                        <img src="/img/combo-src/combo1.png" alt="">
+                        <img src="./img/combo-src/combo1.png" alt="">
                         <div class="content-card_description">
                             <h3>Картофель фри</h3>
                             <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
@@ -780,7 +790,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/combo-src/combo2.png" alt="">
+                        <img src="./img/combo-src/combo2.png" alt="">
                         <div class="content-card_description">
                             <h3>Крылья-гриль</h3>
                             <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
@@ -791,7 +801,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/combo-src/combo3.png" alt="">
+                        <img src="./img/combo-src/combo3.png" alt="">
                         <div class="content-card_description">
                             <h3>Наггетсы</h3>
                             <p>Действительно много семги, сливочный сыр, огурец, рис, нори</p>
@@ -802,7 +812,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/combo-src/combo4.png" alt="">
+                        <img src="./img/combo-src/combo4.png" alt="">
                         <div class="content-card_description">
                             <h3>Ролл</h3>
                             <p>Тигровая креветка, огурец, авокадо, соус Айоли, рис, икра тобико</p>
@@ -813,7 +823,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/combo-src/combo1.png" alt="">
+                        <img src="./img/combo-src/combo1.png" alt="">
                         <div class="content-card_description">
                             <h3>Картофель фри</h3>
                             <p>Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...</p>
@@ -824,7 +834,7 @@
                         </div>
                     </div>
                     <div class="content-card">
-                        <img src="/img/combo-src/combo2.png" alt="">
+                        <img src="./img/combo-src/combo2.png" alt="">
                         <div class="content-card_description">
                             <h3>Крылья-гриль</h3>
                             <p>Сливочный сыр, семга татаки с тростниковым сахаром, соус у...</p>
@@ -864,12 +874,11 @@
     <footer>
         <div class="container">
             <div class="footer__wrapper">
-                <div class="footer__copyright">
+                <div class="footer__column">
                     <div class="logo">
                         <img src="./img/svg/Pizza.svg" alt="">
                         <span>Куда пицца</span>
                     </div>
-                    <p>© Copyright 2021 — Куда Пицца</p>
                 </div>
                 <div class="footer__column">
                     <h4>Куда пицца</h4>
@@ -893,22 +902,26 @@
                     <div class="footer__refs">
                         <ul>
                             <li>
-                                <img src="/img/svg/Phone.svg" alt="">
+                                <img src="./img/svg/Phone.svg" alt="">
                                 <a href="tel:+7(926) 223-10-11">+7(926) 223-10-11</a>
                             </li>
                             <li>
-                                <img src="/img/svg/Location2.svg" alt="">
+                                <img src="./img/svg/Location2.svg" alt="">
                                 <a href="">Москва, ул. Юных Ленинцев, д.99</a>
                             </li>
                             <li>
-                                <img style="display: inline-block;" src="/img/svg/Facebook.svg" alt="">
+                                <img style="display: inline-block;" src="./img/svg/Facebook.svg" alt="">
                                 <a href="http://" target="_blank" rel="noopener noreferrer">Facebook</a>
-                                <img src="/img/svg/Instagram.svg" alt="">
+                                <img src="./img/svg/Instagram.svg" alt="">
                                 <a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a>
                             </li>
                         </ul>
                     </div>
                 </div>
+
+            </div>
+            <div class="footer__copyright">
+                <p>© Copyright 2021 — Куда Пицца</p>
             </div>
         </div>
     </footer>

@@ -1,42 +1,78 @@
 .check-address {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    border: 1px solid #F0F0F0;
-    border-radius: 8px;
-    margin: 16px 0;
-}
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  margin: 16px 0;
 
-.check-address__input-label {
+  &__input-label {
     font-size: 18px;
     margin: 0 32px;
     min-width: fit-content;
-}
+  }
 
-.check-address__input-input {
+  &__wrapper {
+    display: flex;
     width: 100%;
-    min-width: 10rem;
-    border: 1px solid #F0F0F0;
-    border-radius: 6px;
-    padding: 13px 10px;
+    padding: 0 20px;
     margin: 16px 0;
-}
 
-.check-address__input-input:focus {
-    outline: 1px solid #FF7010;
-}
+    .check-address__input-input {
+      width: 100%;
+      min-width: 10rem;
+      border: 1px solid #f0f0f0;
+      border-radius: 6px;
+      padding: 13px 10px;
 
-.check-address__input-input::placeholder {
-    background: url(/img/svg/Location.svg) no-repeat;
-    background-size: 16px;
-    text-indent: 18px;
-}
+      &:focus {
+        outline: 1px solid #ff7010;
+      }
 
-.check-address__input-button {
-    background: #FF7010;
+      &::placeholder {
+        background: url(./img/svg/Location.svg) no-repeat;
+        background-size: 16px;
+        text-indent: 18px;
+      }
+    }
+  }
+
+  &__input-button {
+    background: #ff7010;
     min-width: 150px;
     min-height: 48px;
     color: white;
     margin-left: 20px;
-    margin-right: 32px;
+
+    &::after {
+      content: "Проверить";
+    }
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .check-address {
+    flex-direction: column;
+
+    .check-address__input-label {
+        margin-top: 20px;
+        font-weight: 600;
+        color: #000;
+    }
+
+    .check-address__input-input {
+      border-radius: 0;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      margin-right: -10px;
+    }
+
+    .check-address__input-button {
+      min-width: 0;
+      margin: 0;
+      &::after {
+        content: url(./img/svg/Check-address-arrow.svg);
+      }
+    }
+  }
 }

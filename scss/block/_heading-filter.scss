@@ -1,15 +1,16 @@
 .heading {
     display: flex;
     margin: 30px 0;
-}
 
-.heading-filter {
-    justify-content: space-between;
-}
+    &-filter {
+        justify-content: space-between;
+    }
 
-.button-filter {
-    padding: 8px 16px;
-    background-color: #fff;
-    color: rgb(0, 0, 0);
-    border: 1px solid #F0F0F0;
+    .button-filter {
+        padding: 8px 16px;
+        background-color: #fff;
+        color: rgb(0, 0, 0);
+        border: 1px solid #F0F0F0;
+        height: fit-content;
+    }
 }
