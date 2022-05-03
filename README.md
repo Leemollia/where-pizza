@@ -1,4 +1,4 @@
-<h1 align="center">Where Pizza <img src="./img/svg/Pizza.svg"><h1/> 
+<h1 align="center">Where Pizza <img src="/img/svg/Pizza.svg"><h1/> 
 Проект сайта доставки пиццы
 
 ---
