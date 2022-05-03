@@ -1,5 +1,3 @@
-
-
 const headerSticky = document.querySelector('.header-sticky')
 const headerStickyLinks = document.querySelectorAll('.sticky__links')
 
