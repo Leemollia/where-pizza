@@ -247,7 +247,7 @@
                     </div>
                     <nav class="uk-hidden@m uk-navbar uk-navbar-container" style="background-color: #fff;">
                         <div class="uk-navbar-center">
-                            <a class="uk-navbar-toggle" href="#" style="min-height: 30px;">
+                            <a class="uk-navbar-toggle" href="#" style="min-height: 30px;" uk-toggle="target: #modal-menu-burger">
                                 <img src="./img/svg/Menu.svg" alt=""></a>
                         </div>
                     </nav>
@@ -256,6 +256,19 @@
         </div>
         </div>
         <div class="container">
+            <div id="modal-menu-burger" hidden>
+                <div class="uk-modal-dialog">
+                    <div class="uk-modal-header">
+                        <h2 class="uk-modal-title">Modal Title</h2>
+                    </div>
+                    <div class="uk-modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="uk-modal-footer uk-text-center">
+                        <span>Время работы c 11:00 до 23:00</span>
+                    </div>
+                </div>
+            </div>
             <nav class="nav-bar" uk-slider="finite: false">
                 <ul class="nav-bar__list uk-slider-items">
                     <a href="#advertisinglink">

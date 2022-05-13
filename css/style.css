@@ -518,6 +518,9 @@ header .header-info ul li:last-child {
 
 .advertising .advertising__content {
   gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .advertising .advertising__content .advertising__card {
@@ -744,25 +747,25 @@ header .header-info ul li:last-child {
 }
 
 .check-address__wrapper .check-address__input-input::-webkit-input-placeholder {
-  background: url(./img/svg/Location.svg) no-repeat;
+  background: url(../img/svg/Location.svg) no-repeat;
   background-size: 16px;
   text-indent: 18px;
 }
 
 .check-address__wrapper .check-address__input-input:-ms-input-placeholder {
-  background: url(./img/svg/Location.svg) no-repeat;
+  background: url(../img/svg/Location.svg) no-repeat;
   background-size: 16px;
   text-indent: 18px;
 }
 
 .check-address__wrapper .check-address__input-input::-ms-input-placeholder {
-  background: url(./img/svg/Location.svg) no-repeat;
+  background: url(../img/svg/Location.svg) no-repeat;
   background-size: 16px;
   text-indent: 18px;
 }
 
 .check-address__wrapper .check-address__input-input::placeholder {
-  background: url(./img/svg/Location.svg) no-repeat;
+  background: url(../img/svg/Location.svg) no-repeat;
   background-size: 16px;
   text-indent: 18px;
 }
@@ -802,7 +805,7 @@ header .header-info ul li:last-child {
     margin: 0;
   }
   .check-address .check-address__input-button::after {
-    content: url(./img/svg/Check-address-arrow.svg);
+    content: url(../img/svg/Check-address-arrow.svg);
   }
 }
 
@@ -1004,7 +1007,7 @@ header .header-info ul li:last-child {
 }
 
 .border-select::after {
-  content: url(./img/svg/Done.svg);
+  content: url(../img/svg/Done.svg);
   position: absolute;
   top: 8px;
   right: 8px;
@@ -1046,6 +1049,12 @@ header .header-info ul li:last-child {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+}
+
+#modal-menu-burger {
+  background: none;
+  padding: 0;
+  height: 100%;
 }
 
 .content {

@@ -1,6 +1,7 @@
 .advertising {
   .advertising__content {
     gap: 30px;
+    justify-content: space-between;
 
     .advertising__card {
       display: grid;
