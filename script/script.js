@@ -51,3 +51,20 @@ allButtonModalSelect.forEach(button => {
         button.classList.toggle('border-select')
     })
 })
+
+const contentCard = document.querySelectorAll('.content-card img')
+
+const database = fetch ('../database.json')
+    .then(res => res.json())
+    .then((out) => {
+        console.log(out);
+
+        contentCard.forEach(item => {
+            item.src = out.pizza[0].image
+            console.log(item.src);
+        })
+
+}).catch(err => console.error(err));
+
+
+
