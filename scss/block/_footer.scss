@@ -69,5 +69,14 @@
 @media screen and (max-width: $tabletWidth) {
   .footer__wrapper {
     flex-direction: column;
+    gap: 24px;
+    .footer__column {
+      h4 {}
+      .footer__refs {
+        a {
+          margin: 8px 0;
+        }
+      }
+    }
   }
 }

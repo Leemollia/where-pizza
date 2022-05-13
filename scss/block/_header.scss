@@ -1,10 +1,9 @@
 header {
-    background: #fff;
-    border-bottom: 1px solid #f0f0f0;
-}
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
 
-.header-info {
-    font-family: 'Inter';
+  .header-info {
+    font-family: "Inter";
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,134 +11,155 @@ header {
     font-size: 14px;
     background: #fff;
 
-    .header-info__leftpanel {
-        
-        ul {
-            padding: 0;
-        }
+    &__leftpanel {
+      ul {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0;
+      }
     }
 
-    .header-info__rightpanel {
-        ul {
-            display: flex;
-            justify-content: end;
-            padding: 0;
-        }
+    &__rightpanel {
+      ul {
+        display: flex;
+        justify-content: end;
+        padding: 0;
+      }
     }
-}
 
-.header-info ul li {
-    display: inline-block;
-    padding-right: 20px;
-}
+    ul {
+      li {
+        display: inline-block;
+        padding-right: 20px;
 
-.header-info ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.header-info ul li:last-child {
-    padding-right: 0;
-}
-
-#locationsvg {
-    width: 14px;
-    height: 20px;
-    position: relative;
-    top: 0;
-}
-
-#arrowdownsvg {
-    width: 12px;
-    height: 12px;
-    position: relative;
-    top: 0;
-    color: black;
-}
-
-#accountsvg {
-    position: relative;
-    top: 0;
-    padding-right: 12px;
-}
-
-.button-cart {
-    display: flex;
-    align-items: center;
-    padding: 8px 16px;
-    color: white;
-    background: #FF7010;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.button-cart span {
-    margin-left: 10px;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
 }
 
 .header-sticky {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    padding: 11px 0;
-    background: #ffffff;
-    border-bottom: 1px solid #f0f0f0;
-}
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 11px 0;
+  background: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
 
-.header-sticky__nav-bar {
+  &__nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
     margin: 0;
     padding: 0;
+
+    .sticky__links {
+      display: none;
+
+      > a {
+        text-decoration: none;
+        padding: 0 16px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+
+        &:nth-last-child(2) {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+    }
+
+    .sticky__cart {
+      margin-left: auto;
+
+      button {
+        width: max-content;
+      }
+    }
+  }
 }
 
-.sticky__links {
-    display: none;
+#locationsvg {
+  width: 14px;
+  height: 20px;
+  position: relative;
+  top: 0;
 }
 
-.sticky__links a {
-    text-decoration: none;
-    padding: 0 16px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+#arrowdownsvg {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 0;
+  color: black;
 }
 
-.sticky__cart {
-    margin-left: auto;
+#accountsvg {
+  position: relative;
+  top: 0;
+  padding-right: 12px;
 }
 
-.sticky__logo {
-    display: flex;
-    align-items: center;
-    margin-right: 64px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+.button-cart {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  color: white;
+  background: #ff7010;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
-.sticky__logo span {
-    padding-left: 12px;
+.button-cart span {
+  margin-left: 10px;
 }
 
 .popup-other {
-    background: #FFFFFF;
-    border: 1px solid #F0F0F0;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 8px rgba(25, 25, 25, 0.1);
-    border-radius: 12px;
-    pointer-events: all;
-    padding: 5px 20px;
-    --uk-position-offset: 30px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 8px rgba(25, 25, 25, 0.1);
+  border-radius: 12px;
+  pointer-events: all;
+  padding: 5px 20px;
+  --uk-position-offset: 30px;
 }
 
 @media screen and (max-width: $tabletWidth) {
-    .header-info__leftpanel {
-        width: 100%;
+  .header-info {
+    &__leftpanel {
+      width: 100%;
 
-        ul {
-            justify-content: space-between;
+      ul {
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+
+        li:nth-child(2) {
+          display: none;
         }
+      }
     }
+
+    &__rightpanel {
+      display: none;
+    }
+  }
+
+  #arrowdownsvg {
+    display: none;
+  }
+
+  .sticky__cart {
+    display: none;
+  }
 }

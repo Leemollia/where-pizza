@@ -1,30 +1,44 @@
 .advertising {
-    .advertising__content {
-        gap: 30px;
+  .advertising__content {
+    gap: 30px;
 
-        .advertising__card {
-            display: grid;
-            grid-template-rows: 75% 25%;
-            background: #FF7010;
-            border-radius: 12px;
-            min-width: 300px;
-            width: 300px;
-            height: 343px;
-            overflow: hidden;
-            text-decoration: none;
+    .advertising__card {
+      display: grid;
+      grid-template-rows: 75% 25%;
+      background: #ff7010;
+      border-radius: 12px;
+      width: 300px;
+      height: 343px;
+      overflow: hidden;
+      text-decoration: none;
+      
 
-            h4 {
-                padding: 20px;
-                padding-right: 40px;
-                color: #fff;
-                align-self: end;
-            }
-
-            &__red {
-                background: #E23535;
-                align-items: center;
-            }
+      h3 {
+        padding: 20px;
+        padding-right: 40px;
+        color: #fff;
+        align-self: end;
+        margin: 0;  
         }
-    }
 
+      &__red {
+        background: #e23535;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tabletWidth) {
+  .advertising {
+    .advertising__content {
+      gap: 20px;
+
+      .advertising__card {
+        width: 280px;
+        height: 320px;
+        margin: 0;
+      }
+    }
+  }
 }

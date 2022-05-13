@@ -1,8 +1,21 @@
 .modal-menu {
+  position: relative;
   display: flex;
-  height: auto;
+  gap: 13px;
   border-radius: 24px;
   width: 1070px;
+
+  .modal__line {
+    display: none;
+    position: absolute;
+    top: -22px;
+    left: 25%;
+    width: 50%;
+    height: 5px;
+    background: #F5F5F5;
+    opacity: 0.6;
+    border-radius: 100px;
+  }
 
   .modal__leftpanel {
     display: flex;
@@ -150,6 +163,10 @@
 @media screen and (max-width: $tabletWidth) {
   #modal-menu {
     padding: 20% 0 0 0;
+
+    .modal__line {
+      display: block;
+    }
 
     .modal-menu {
       flex-direction: column;
