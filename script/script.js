@@ -11,7 +11,7 @@ window.onscroll = function showHeaderSticky() {
   }
 };
 
-const database = fetch("https://github.com/Leemollia/where-pizza/blob/a92ec15e43859ae27ed8e121a965d751d63de1cb/database.json")
+const database = fetch("../database.json")
   .then((res) => res.json())
   .then((out) => {
     //console.log(out);
