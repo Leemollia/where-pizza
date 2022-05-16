@@ -6,7 +6,7 @@
         "ingredients": "грибной соус, курица, моцарелла, орегано, томаты, шампиньоны",
         "image": "https://pizzaricca.ru/items/55.png",
         "price": 710,
-        "rating": 3
+        "hit": true
       },
       {
         "id": 1,
@@ -14,7 +14,7 @@
         "ingredients": "ананасы, креветки, моцарелла, соус том ям, томаты, чернила каракатицы, шампиньоны",
         "image": "https://pizzaricca.ru/items/47.png",
         "price": 415,
-        "rating": 5
+        "hit": true
       },
       {
         "id": 2,
@@ -22,7 +22,7 @@
         "ingredients": "белый соус, ветчина, грудинка, курица, маринованные огурцы, моцарелла, томаты, укроп",
         "image": "https://pizzaricca.ru/items/6.png",
         "price": 464,
-        "rating": 4
+        "hit": false
       },
       {
         "id": 3,
@@ -30,7 +30,7 @@
         "ingredients": "базилик, болгарский перец, красный соус, маслины, моцарелла, острый перец, пепперони (нарезанная соломкой), томаты",
         "image": "https://pizzaricca.ru/items/11.png",
         "price": 480,
-        "rating": 3
+        "hit": false
       },
       {
         "id": 4,
@@ -38,7 +38,7 @@
         "ingredients": "лосось, лук, моцарелла, сливочный сыр, тобико, тунцовый соус, укроп",
         "image": "https://pizzaricca.ru/items/15.png",
         "price": 317,
-        "rating": 1
+        "hit": false
       },
       {
         "id": 5,
@@ -46,7 +46,7 @@
         "ingredients": "грудинка, красный соус, моцарелла, охотничьи колбаски, сырокопченая колбаса, томаты, укроп, шампиньоны",
         "image": "https://pizzaricca.ru/items/29.png",
         "price": 610,
-        "rating": 0
+        "hit": false
       },
       {
         "id": 6,
@@ -54,7 +54,7 @@
         "ingredients": "ветчина, грудинка, красный соус, курица*, лук, моцарелла, укроп",
         "image": "https://pizzaricca.ru/items/10.png",
         "price": 470,
-        "rating": 4
+        "hit": false
       },
       {
         "id": 7,
@@ -62,7 +62,7 @@
         "ingredients": "ветчина, грибной соус, моцарелла, орегано, томаты, шампиньоны",
         "image": "https://pizzaricca.ru/items/17.png",
         "price": 510,
-        "rating": 0
+        "hit": false
       },
       {
         "id": 8,
@@ -70,7 +70,7 @@
         "ingredients": "белый соус, ветчина, курица*, моцарелла, салями с/к, томаты, укроп",
         "image": "https://pizzaricca.ru/items/3.png",
         "price": 520,
-        "rating": 5
+        "hit": false
       },
       {
         "id": 9,
@@ -78,7 +78,7 @@
         "ingredients": "базилик, белый соус, болгарский перец, грудинка, моцарелла, охотничьи колбаски, салями с/к, томаты, шампиньоны",
         "image": "https://pizzaricca.ru/items/5.png",
         "price": 882,
-        "rating": 2
+        "hit": false
       },
       {
         "id": 10,
@@ -86,7 +86,7 @@
         "ingredients": "лосось, лук, маслины, моцарелла, тигровые креветки, томаты, тунцовый соус, укроп",
         "image": "https://pizzaricca.ru/items/14.png",
         "price": 610,
-        "rating": 1
+        "hit": false
       },
       {
         "id": 11,
@@ -94,7 +94,7 @@
         "ingredients": "ананасы, белый соус, ветчина, моцарелла, сладкий чили, тигровые креветки, чернила каракатицы",
         "image": "https://pizzaricca.ru/items/34.png",
         "price": 620,
-        "rating": 2
+        "hit": false
       },
       {
         "id": 12,
@@ -102,7 +102,7 @@
         "ingredients": "белый соус, курица*, лук, моцарелла, орегано, томаты",
         "image": "https://pizzaricca.ru/items/4.png",
         "price": 470,
-        "rating": 3
+        "hit": false
       },
       {
         "id": 13,
@@ -110,7 +110,7 @@
         "ingredients": "грибной соус, моцарелла, орегано, томаты, шампиньоны",
         "image": "https://pizzaricca.ru/items/16.png",
         "price": 520,
-        "rating": 2
+        "hit": false
       },
       {
         "id": 14,
@@ -118,7 +118,7 @@
         "ingredients": "ананасы, белый соус, курица в соусе терияки, маслины, моцарелла, орегано",
         "image": "https://pizzaricca.ru/items/1.png",
         "price": 660,
-        "rating": 0
+        "hit": false
       },
       {
         "id": 15,
@@ -126,31 +126,31 @@
         "ingredients": "базилик, говяжий фарш, лук, маринованные огурцы, моцарелла, острый перец, салями с/к, соус гриль, томаты, чеддер, чернила каракатицы",
         "image": "https://pizzaricca.ru/items/51.png",
         "price": 570,
-        "rating": 4
+        "hit": false
       },
       {
-        "id": 17,
+        "id": 16,
         "title": "Баварская",
         "ingredients": "болгарский перец, ветчина, красный соус, лук, маслины, моцарелла, охотничьи колбаски, салями с/к, укроп",
         "image": "https://pizzaricca.ru/items/7.png",
         "price": 480,
-        "rating": 4
+        "hit": false
       },
       {
-        "id": 18,
+        "id": 17,
         "title": "4 Сыра",
         "ingredients": "базилик, дорблю, моцарелла, пармезан, сливочный сыр, сырный соус",
         "image": "https://pizzaricca.ru/items/12.png",
         "price": 796,
-        "rating": 5
+        "hit": false
       },
       {
-        "id": 19,
+        "id": 18,
         "title": "Эндорфин",
         "ingredients": "болгарский перец, грудинка, курица маринованная, моцарелла, редис дайкон, соус азиатский, соус манго-маракуйя, черный кунжут",
         "image": "https://pizzaricca.ru/items/55.png",
         "price": 610,
-        "rating": 5
+        "hit": false
       }
     ],
 
@@ -161,7 +161,7 @@
         "ingredients": "болгарский перец, грудинка, курица маринованная, моцарелла, редис дайкон, соус азиатский, соус манго-маракуйя, черный кунжут",
         "image": "https://pizzaricca.ru/items/55.png",
         "price": 610,
-        "rating": 5
+        "hit": false
       }
     ]
   }

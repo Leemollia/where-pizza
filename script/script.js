@@ -1,5 +1,7 @@
-const headerSticky = document.querySelector('.header-sticky')
-const headerStickyLinks = document.querySelector('.sticky__links')
+
+
+const contentCard = document.querySelectorAll('.content-card img')
+const content = document.querySelector('.content')
 
 window.onscroll = function showHeaderSticky() {
     if(window.innerWidth > 960) {
@@ -11,60 +13,30 @@ window.onscroll = function showHeaderSticky() {
     }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-
-    const allButtonFilter = document.querySelectorAll('.button-filter')
-    const allButtonSelect = document.querySelectorAll('.button-select')
-
-    allButtonFilter.forEach(button => {
-        button.setAttribute('uk-toggle', 'target: #filter-menu')
-
-        button.addEventListener('click', () => {
-            button.setAttribute('uk-toggle', 'target: #filter-menu')
-        })
-    })
-
-    allButtonSelect.forEach(button => {
-        button.setAttribute('uk-toggle', 'target: #modal-menu')
-
-        button.addEventListener('click', () => {
-            button.setAttribute('uk-toggle', 'target: #modal-menu')
-        })
-    })
-})
-
-
-const allButtonBorder = document.querySelectorAll('.button-border')
-
-allButtonBorder.forEach(button => {
-
-    button.addEventListener('click', () => {
-        button.classList.toggle('button-border-focus')
-    })
-})
-
-const allButtonModalSelect = document.querySelectorAll('.button-modal-select')
-
-allButtonModalSelect.forEach(button => {
-
-    button.addEventListener('click', () => {
-        button.classList.toggle('border-select')
-    })
-})
-
-const contentCard = document.querySelectorAll('.content-card img')
-
-const database = fetch ('../database.json')
+fetch ('../database.json')
     .then(res => res.json())
     .then((out) => {
-        console.log(out);
+        //console.log(out);
 
-        contentCard.forEach(item => {
-            item.src = out.pizza[0].image
-            console.log(item.src);
-        })
+        //Берем всю информацию из объекта JSON и вставляем в HTML (пицца)
+        for (let i = 0; i < out.pizza.length; i++) {
 
-}).catch(err => console.error(err));
+            let div = document.createElement('div');
+            div.className = "content-card";
+            div.innerHTML = 
+            `
+            <div class="content-card__label">New</div>
+            <img src="${ out.pizza[i].image }">
+            <div class="content-card_description">
+                <h3>${ out.pizza[i].title }</h3>
+                <p>${ out.pizza[i].ingredients }</p>
 
-
-
+                <div class="content-card_select">
+                    <button class="button button-select" uk-toggle="target: #modal-menu">Выбрать</button>
+                    <span>${'от ' + out.pizza[i].price + ' ₽'}</span>
+                </div>
+            </div>
+            `
+          content.append(div)
+        }})
+        .catch(err => console.error(err));
