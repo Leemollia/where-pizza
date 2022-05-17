@@ -10,7 +10,7 @@
   flex-direction: column;
   position: relative;
   width: 300px;
-  min-height: 480px;
+  //min-height: 480px;
   border: 1px solid #f0f0f0;
   border-radius: 12px;
 }
@@ -34,7 +34,7 @@
 .content-card_description {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
   margin: 20px;
   margin-bottom: 16px;
   height: 100%;
@@ -100,6 +100,7 @@
 
       .content-card_description {
         overflow: hidden;
+        gap: 0;
 
         h3 {
           margin: 0 0 8px 0;

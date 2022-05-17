@@ -155,6 +155,10 @@ header {
     }
   }
 
+  .header-sticky {
+    position: static;
+  }
+
   #arrowdownsvg {
     display: none;
   }

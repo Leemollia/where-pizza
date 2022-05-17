@@ -1,22 +1,20 @@
+import showContentDeserts from "./components/showContentDeserts.js";
+import showContentDrinks from "./components/showContentDrinks.js";
 import showContentPizza from "./components/showContentPizza.js";
+import showContentSauce from "./components/showContentSauce.js";
+import showContentSnacks from "./components/showContentSnacks.js";
+import showContentSushi from "./components/showContentSushi.js";
 
-const content = document.querySelector(".content");
-
-window.onscroll = function showHeaderSticky() {
-  if (window.innerWidth > 960) {
-    if (document.documentElement.scrollTop > 180) {
-      headerStickyLinks.style.display = "flex";
-    } else {
-      headerStickyLinks.style.display = "none";
-    }
-  }
-};
-
-
-fetch("../database.json")
+export const out = await fetch("../database.json")
   .then((res) => res.json())
-  .then((out) => {
-
-    new showContentPizza ()
+  .then((data) => {
+    return data;
   })
   .catch((err) => console.error(err));
+
+new showContentPizza;
+new showContentSushi;
+new showContentSnacks;
+new showContentDeserts;
+new showContentDrinks;
+new showContentSauce;
