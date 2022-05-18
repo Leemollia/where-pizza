@@ -5,7 +5,7 @@ import showContentSauce from "./components/showContentSauce.js";
 import showContentSnacks from "./components/showContentSnacks.js";
 import showContentSushi from "./components/showContentSushi.js";
 
-export const out = await fetch("../database.json")
+export const out = await fetch("./database.json")
   .then((res) => res.json())
   .then((data) => {
     return data;

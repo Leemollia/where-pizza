@@ -3,7 +3,7 @@ import { out } from "../script.js";
 export default class showContentSnacks {
   constructor() {
     const content = document.querySelector(".content.content-snacks");
-
+    
     for (let i = 0; i < out.snacks.length; i++) {
       const div = document.createElement("div");
       div.className = "content-card";
