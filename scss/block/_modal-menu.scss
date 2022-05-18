@@ -12,7 +12,7 @@
     left: 25%;
     width: 50%;
     height: 5px;
-    background: #F5F5F5;
+    background: #f5f5f5;
     opacity: 0.6;
     border-radius: 100px;
   }
@@ -171,7 +171,7 @@
     .modal-menu {
       flex-direction: column;
       border-radius: 16px 16px 0px 0px;
-      
+
       .uk-modal-close-default {
         display: none;
       }
@@ -179,11 +179,25 @@
         width: 100%;
       }
       .modal__rightpanel {
+        .rightpanel__header {
+          align-items: flex-end;
+
+          h4 {
+            font-size: 18px;
+            line-height: 22px;
+          }
+        }
         .rightpanel__ingredients {
           overflow: scroll;
+          img {
+            max-width: none;
+          }
         }
         .rightpanel__topping {
           overflow: scroll;
+          img {
+            max-width: none;
+          }
         }
         .rightpanel__price {
           .price__total {

@@ -114,16 +114,16 @@ h4 {
   background: #fff;
   color: #000;
   border: 1px solid #f9f9f9;
-}
 
-.button-border-focus {
-  background: #ff7010;
-  color: #fff;
-  border: 1px solid #ff7010;
-}
+  &-focus {
+    background: #ff7010;
+    color: #fff;
+    border: 1px solid #ff7010;
+  }
 
-.button-border:hover {
-  border: 1px solid #ff7010;
+  &:hover {
+    border: 1px solid #ff7010;
+  }
 }
 
 .sticky-cart {

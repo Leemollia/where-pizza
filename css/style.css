@@ -851,7 +851,7 @@ header .header-info ul li:last-child {
   left: 25%;
   width: 50%;
   height: 5px;
-  background: #F5F5F5;
+  background: #f5f5f5;
   opacity: 0.6;
   border-radius: 100px;
 }
@@ -1058,11 +1058,26 @@ header .header-info ul li:last-child {
   #modal-menu .modal-menu .modal__leftpanel {
     width: 100%;
   }
+  #modal-menu .modal-menu .modal__rightpanel .rightpanel__header {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  #modal-menu .modal-menu .modal__rightpanel .rightpanel__header h4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
   #modal-menu .modal-menu .modal__rightpanel .rightpanel__ingredients {
     overflow: scroll;
   }
+  #modal-menu .modal-menu .modal__rightpanel .rightpanel__ingredients img {
+    max-width: none;
+  }
   #modal-menu .modal-menu .modal__rightpanel .rightpanel__topping {
     overflow: scroll;
+  }
+  #modal-menu .modal-menu .modal__rightpanel .rightpanel__topping img {
+    max-width: none;
   }
   #modal-menu .modal-menu .modal__rightpanel .rightpanel__price .price__total {
     -webkit-box-orient: vertical;

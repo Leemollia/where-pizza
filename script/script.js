@@ -1,3 +1,4 @@
+import modalMenu from "./components/modalMenu.js";
 import showContentDeserts from "./components/showContentDeserts.js";
 import showContentDrinks from "./components/showContentDrinks.js";
 import showContentPizza from "./components/showContentPizza.js";
@@ -18,3 +19,4 @@ new showContentSnacks;
 new showContentDeserts;
 new showContentDrinks;
 new showContentSauce;
+new modalMenu;
